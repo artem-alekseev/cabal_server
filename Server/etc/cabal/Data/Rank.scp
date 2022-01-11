@@ -1,0 +1,229 @@
+
+
+
+[RankUp]	M1sRank	M1mRank	M2sRank	M2mRank	M3sRank	M3mRank	M4sRank	M4mRank	M5sRank	M5mRank	M6sRank	M6mRank
+0	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>
+1	21	11	21	11	11	21	11	21	16	16	16	16
+2	42	22	42	22	22	42	22	42	32	32	32	32
+3	63	33	63	33	33	63	33	63	48	48	48	48
+4	84	44	84	44	44	84	44	84	64	64	64	64
+5	105	55	105	55	55	105	55	105	80	80	80	80
+6	126	66	126	66	66	126	66	126	96	96	96	96
+7	147	77	147	77	77	147	77	147	112	112	112	112
+8	168	88	168	88	88	168	88	168	128	128	128	128
+9	189	99	189	99	99	189	99	189	144	144	144	144
+10	210	110	210	110	110	210	110	210	160	160	160	160
+
+[RankUpBonus]	UpgradeNum	sNum	sSTR	sDEX	mNum	mINT	mDEX
+0	1	3	0	0	4	0	0
+1	2	5	4	4	6	4	4
+2	2	7	6	6	9	6	6
+3	3	9	8	8	11	8	8
+4	3	11	10	10	14	10	10
+5	4	13	12	12	16	12	12
+6	4	15	14	14	19	14	14
+7	5	17	14	14	21	14	14
+8	5	19	14	14	24	14	14
+9	6	21	14	14	26	14	14
+
+
+[StyleMastery]	M1STR	M1DEX	M1INT	M2STR	M2DEX	M2INT	M3STR	M3DEX	M3INT	M4STR	M4DEX	M4INT	M5STR	M5DEX	M5INT	M6STR	M6DEX	M6INT
+0	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>
+1	53	17	6	34	36	6	6	13	57	12	26	38	31	20	25	25	26	25
+2	91	29	10	60	60	10	10	23	97	21	45	64	53	34	43	43	44	43
+3	126	38	14	81	83	14	14	31	133	29	60	89	74	45	59	59	60	59
+4	167	51	19	108	110	19	19	41	177	39	80	118	98	60	79	79	79	79
+5	201	61	23	130	132	23	23	49	213	47	96	142	118	72	95	95	95	95
+6	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+7	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+8	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+9	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+10	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+11	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+12	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+13	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+14	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+15	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+16	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+17	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+18	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+19	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+20	245	74	28	159	160	28	28	59	260	57	117	173	144	88	115	115	117	115
+
+
+[StyleMasterySkill]	MasteryLv	Class	Skill1Idx	Skill1SlotIdx	Skill2Idx	Skill2SlotIdx	MaxSP
+0	1	1	419	37	<null>	<null>	5000
+1	1	2	419	37	<null>	<null>	5000
+2	1	3	419	37	<null>	<null>	5000
+3	1	4	419	37	<null>	<null>	5000
+4	1	5	419	37	<null>	<null>	5000
+5	1	6	419	37	<null>	<null>	5000
+6	2	1	333	36	<null>	<null>	10000
+7	2	2	333	36	<null>	<null>	10000
+8	2	3	333	36	<null>	<null>	10000
+9	2	4	333	36	<null>	<null>	10000
+10	2	5	333	36	<null>	<null>	10000
+11	2	6	333	36	<null>	<null>	10000
+12	3	1	340	38	<null>	<null>	15000
+13	3	2	342	38	<null>	<null>	15000
+14	3	3	344	38	<null>	<null>	15000
+15	3	4	346	38	<null>	<null>	15000
+16	3	5	348	38	<null>	<null>	15000
+17	3	6	350	38	<null>	<null>	15000
+18	4	1	<null>	<null>	<null>	<null>	20000
+19	4	2	<null>	<null>	<null>	<null>	20000
+20	4	3	<null>	<null>	<null>	<null>	20000
+21	4	4	<null>	<null>	<null>	<null>	20000
+22	4	5	<null>	<null>	<null>	<null>	20000
+23	4	6	<null>	<null>	<null>	<null>	20000
+24	5	1	341	39	400	41	25000
+25	5	2	343	39	402	41	25000
+26	5	3	345	39	404	41	25000
+27	5	4	347	39	406	41	25000
+28	5	5	349	39	408	41	25000
+29	5	6	351	39	410	41	25000
+30	6	1	401	42	<null>	<null>	25000
+31	6	2	403	42	<null>	<null>	25000
+32	6	3	405	42	<null>	<null>	25000
+33	6	4	407	42	<null>	<null>	25000
+34	6	5	409	42	<null>	<null>	25000
+35	6	6	411	42	<null>	<null>	25000
+36	7	1	<null>	<null>	<null>	<null>	25000
+37	7	2	<null>	<null>	<null>	<null>	25000
+38	7	3	<null>	<null>	<null>	<null>	25000
+39	7	4	<null>	<null>	<null>	<null>	25000
+40	7	5	<null>	<null>	<null>	<null>	25000
+41	7	6	<null>	<null>	<null>	<null>	25000
+42	8	1	<null>	<null>	<null>	<null>	25000
+43	8	2	<null>	<null>	<null>	<null>	25000
+44	8	3	<null>	<null>	<null>	<null>	25000
+45	8	4	<null>	<null>	<null>	<null>	25000
+46	8	5	<null>	<null>	<null>	<null>	25000
+47	8	6	<null>	<null>	<null>	<null>	25000
+48	9	1	<null>	<null>	<null>	<null>	25000
+49	9	2	<null>	<null>	<null>	<null>	25000
+50	9	3	<null>	<null>	<null>	<null>	25000
+51	9	4	<null>	<null>	<null>	<null>	25000
+52	9	5	<null>	<null>	<null>	<null>	25000
+53	9	6	<null>	<null>	<null>	<null>	25000
+54	10	1	<null>	<null>	<null>	<null>	25000
+55	10	2	<null>	<null>	<null>	<null>	25000
+56	10	3	<null>	<null>	<null>	<null>	25000
+57	10	4	<null>	<null>	<null>	<null>	25000
+58	10	5	<null>	<null>	<null>	<null>	25000
+59	10	6	<null>	<null>	<null>	<null>	25000
+60	11	1	<null>	<null>	<null>	<null>	25000
+61	11	2	<null>	<null>	<null>	<null>	25000
+62	11	3	<null>	<null>	<null>	<null>	25000
+63	11	4	<null>	<null>	<null>	<null>	25000
+64	11	5	<null>	<null>	<null>	<null>	25000
+65	11	6	<null>	<null>	<null>	<null>	25000
+66	12	1	<null>	<null>	<null>	<null>	25000
+67	12	2	<null>	<null>	<null>	<null>	25000
+68	12	3	<null>	<null>	<null>	<null>	25000
+69	12	4	<null>	<null>	<null>	<null>	25000
+70	12	5	<null>	<null>	<null>	<null>	25000
+71	12	6	<null>	<null>	<null>	<null>	25000
+72	13	1	<null>	<null>	<null>	<null>	25000
+73	13	2	<null>	<null>	<null>	<null>	25000
+74	13	3	<null>	<null>	<null>	<null>	25000
+75	13	4	<null>	<null>	<null>	<null>	25000
+76	13	5	<null>	<null>	<null>	<null>	25000
+77	13	6	<null>	<null>	<null>	<null>	25000
+78	14	1	<null>	<null>	<null>	<null>	25000
+79	14	2	<null>	<null>	<null>	<null>	25000
+80	14	3	<null>	<null>	<null>	<null>	25000
+81	14	4	<null>	<null>	<null>	<null>	25000
+82	14	5	<null>	<null>	<null>	<null>	25000
+83	14	6	<null>	<null>	<null>	<null>	25000
+84	15	1	<null>	<null>	<null>	<null>	25000
+85	15	2	<null>	<null>	<null>	<null>	25000
+86	15	3	<null>	<null>	<null>	<null>	25000
+87	15	4	<null>	<null>	<null>	<null>	25000
+88	15	5	<null>	<null>	<null>	<null>	25000
+89	15	6	<null>	<null>	<null>	<null>	25000
+90	16	1	<null>	<null>	<null>	<null>	25000
+91	16	2	<null>	<null>	<null>	<null>	25000
+92	16	3	<null>	<null>	<null>	<null>	25000
+93	16	4	<null>	<null>	<null>	<null>	25000
+94	16	5	<null>	<null>	<null>	<null>	25000
+95	16	6	<null>	<null>	<null>	<null>	25000
+96	17	1	<null>	<null>	<null>	<null>	25000
+97	17	2	<null>	<null>	<null>	<null>	25000
+98	17	3	<null>	<null>	<null>	<null>	25000
+99	17	4	<null>	<null>	<null>	<null>	25000
+100	17	5	<null>	<null>	<null>	<null>	25000
+101	17	6	<null>	<null>	<null>	<null>	25000
+102	18	1	<null>	<null>	<null>	<null>	25000
+103	18	2	<null>	<null>	<null>	<null>	25000
+104	18	3	<null>	<null>	<null>	<null>	25000
+105	18	4	<null>	<null>	<null>	<null>	25000
+106	18	5	<null>	<null>	<null>	<null>	25000
+107	18	6	<null>	<null>	<null>	<null>	25000
+108	19	1	<null>	<null>	<null>	<null>	30000
+109	19	2	<null>	<null>	<null>	<null>	30000
+110	19	3	<null>	<null>	<null>	<null>	30000
+111	19	4	<null>	<null>	<null>	<null>	30000
+112	19	5	<null>	<null>	<null>	<null>	30000
+113	19	6	<null>	<null>	<null>	<null>	30000
+114	20	1	<null>	<null>	<null>	<null>	30000
+115	20	2	<null>	<null>	<null>	<null>	30000
+116	20	3	<null>	<null>	<null>	<null>	30000
+117	20	4	<null>	<null>	<null>	<null>	30000
+118	20	5	<null>	<null>	<null>	<null>	30000
+119	20	6	<null>	<null>	<null>	<null>	30000
+
+
+[SkillEXP]	M1Sword	M1Magic	M2Sword	M2Magic	M3Sword	M3Magic	M4Sword	M4Magic	M5Sword	M5Magic	M6Sword	M6Magic
+0	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>
+1	2381	4545	2381	4545	4545	2381	4545	2381	3125	3125	3125	3125
+2	5118	9773	5118	9773	9773	5118	9773	5118	6718	6718	6718	6718
+3	6588	12576	6588	12576	12576	6588	12576	6588	8646	8646	8646	8646
+4	7857	15000	7857	15000	15000	7857	15000	7857	10313	10313	10313	10313
+5	9143	17454	9143	17454	17454	9143	17454	9143	12000	12000	12000	12000
+6	10516	20076	10516	20076	20076	10516	20076	10516	13802	13802	13802	13802
+7	12007	22922	12007	22922	22922	12007	22922	12007	15759	15759	15759	15759
+8	13631	26023	13631	26023	26023	13631	26023	13631	17891	17891	17891	17891
+9	15396	29394	15396	29394	29394	15396	29394	15396	20208	20208	20208	20208
+10	17310	33046	17310	33046	33046	17310	33046	17310	22719	22719	22719	22719
+
+[BattleStyleData]	AttackCoef	MagAttCoef	DefensCoef	AttckRCoef	DefenRCoef	StatMaxAtt	StatMagAtt	StatDefens	StatAttckR	StatDefenR	InitHP	InitMP	DeltaHP	DeltaMP	MinDmgRate
+0	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>	<null>
+1	8,-5	5,-4	6,-6	7,-7	7,-7	3000,2000,0	1000,1000,3000	1500,1500,0	4000,17500,4000	2000,10000,1000	50	20	30	10	80
+2	7,-4	5,-4	6,-6	10,-10	10,-10	2500,2500,0	1000,1000,3500	1500,1500,0	20000,20000,4000	12000,12000,1000	50	20	30	10	90
+3	5,-4	8,-7	7,-6	7,-7	7,-7	2000,1000,1000	0,1000,3500	1250,1250,750	4000,17500,4000	1500,10000,4000	40	30	20	20	85
+4	5,-5	6,-5	5,-5	8,-7	7,-7	2000,1200,1000	0,2500,3000	1250,1250,1000	4000,17500,4000	1000,10000,1500	40	30	20	20	85
+5	6,-2	5,-4	7,-6	8,-7	3,-3	2500,2300,1000	500,2500,2900	2500,1800,1100	4000,17500,4000	2000,10000,1000	45	25	25	15	85
+6	6,-3	5,-4	6,-6	8,-8	5,-5	2400,2300,1000	500,2500,2850	1250,1500,1000	4000,17500,4000	1000,10000,1000	45	25	25	15	85
+
+
+[StyleMasteryStat]	STR	DEX	INT
+0	<null>	<null>	<null>
+1	24	8	3
+2	16	16	3
+3	3	6	26
+4	6	12	17
+5	15	9	11
+6	12	11	12
+
+[New_HP]	Style	BDelta
+0	1	500
+1	2	389
+2	3	79
+3	4	184
+4	5	450
+5	6	310
+
+
+[Rank_Limit]	Rank	Level	Bs_Lv
+0	1	1	1
+1	2	10	2
+2	2	10	3
+3	3	30	4
+4	4	40	5
+5	5	50	6
+6	6	60	7
+7	7	70	8
+8	8	80	9
+9	9	90	10
+10	10	100	11

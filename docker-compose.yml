@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+
+  server: 
+    build: 
+      context: ./Server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    ports:
+      - 80:80
+      - 443:443
+      - 38101:38101
+      - 38121:38121
+      - 38151:38151
+      - 38111-38120:38111-38120
+      - 38170:38170
+    depends_on:
+      - mssql
+
+  mssql: 
+    build: .
+    ports:
+      - 1433:1433
+    environment:
+      - SA_PASSWORD=${DB_PASSWORD}
+      - ACCEPT_EULA=Y

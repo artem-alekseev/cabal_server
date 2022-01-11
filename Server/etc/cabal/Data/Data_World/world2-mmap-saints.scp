@@ -1,0 +1,14 @@
+
+
+[MMap]	SpeciesIdx	PosX	PosY	Width	Height	SpwnInterval	SpawnDefault	EvtProperty	EvtMobs	EvtInterval	MissionGate	PerfectDrop	Type	Min	Max	Authority	Server_Mob	Loot_Delay
+0	1801	26	138	4	4	604800000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	30000
+1	1801	68	149	4	4	604800000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	30000
+2	1801	94	65	4	4	604800000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	30000
+3	1801	151	223	4	4	604800000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	30000
+4	1801	36	31	4	4	604800000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	30000
+5	1801	230	210	4	4	604800000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	30000
+6	1801	217	22	4	4	604800000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	30000
+7	1800	162	42	4	4	604800000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	30000
+
+
+[MissionMMAP]	QDungeonIdx	MMapidx	Cells
