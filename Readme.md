@@ -8,6 +8,10 @@ Install [Docker](https://www.docker.com/get-started)
 
 Copy .env.example to .env and configurate .env
 
+Use a strong password for mssql with special symbols, numbers, and uppercase symbols
+
+Otherwise, your container will not start.
+
 ### Database
 
 ```cmd

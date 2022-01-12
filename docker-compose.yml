@@ -24,6 +24,8 @@ services:
       context: ./db
     ports:
       - 1433:1433
+    volumes:
+      - ./db/data:/var/opt/mssql/data:rw
     environment:
       - SA_PASSWORD=${DB_PASSWORD}
       - ACCEPT_EULA=Y
