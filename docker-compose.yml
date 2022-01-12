@@ -4,7 +4,7 @@ services:
 
   server: 
     build: 
-      context: ./Server
+      context: ./server
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
@@ -20,7 +20,8 @@ services:
       - mssql
 
   mssql: 
-    build: .
+    build: 
+      context: ./db
     ports:
       - 1433:1433
     environment:
