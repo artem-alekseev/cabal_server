@@ -3,7 +3,7 @@
 serveridx=$1
 chanelidx=$2
 
-if [ serveridx -gt 1 ]
+if [ $serveridx -gt 1 ]
 then
   index=$(( 10 * $serveridx ))
 else 
