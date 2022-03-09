@@ -15,22 +15,22 @@ echo -e -n "\033[0m"
   echo
 )
 
-echo -e "Starting GlobalDBAgent..." && usr/bin/GlobalDBAgent && sleep 1
-echo -e "Starting AuthDBAgent..." && usr/bin/AuthDBAgent && sleep 1
-echo -e "Starting CashDBAgent..." && usr/bin/CashDBAgent && sleep 1
-echo -e "Starting EventDBAgent..." && usr/bin/EventDBAgent && sleep 1
-echo -e "Starting PCBangDBAgent..." && usr/bin/PCBangDBAgent && sleep 1
+echo -e "Starting GlobalDBAgent..." && /usr/bin/GlobalDBAgent && sleep 1
+echo -e "Starting AuthDBAgent..." && /usr/bin/AuthDBAgent && sleep 1
+echo -e "Starting CashDBAgent..." && /usr/bin/CashDBAgent && sleep 1
+echo -e "Starting EventDBAgent..." && /usr/bin/EventDBAgent && sleep 1
+echo -e "Starting PCBangDBAgent..." && /usr/bin/PCBangDBAgent && sleep 1
 
 FILES=/etc/cabal/DBAgent_*.ini
 for f in $FILES
 do
   out=${f/'/etc/cabal/'/}
   out=${out/'.ini'/}
-  echo -e "Starting $out..." && usr/bin/$out && sleep 1
+  echo -e "Starting $out..." && /usr/bin/$out && sleep 1
 done
 
-echo -e "Starting RockAndRollITS..." && usr/bin/RockAndRollITS && sleep 1
-echo -e "Starting GlobalMgrSvr..." && usr/bin/GlobalMgrSvr && sleep 1
+echo -e "Starting RockAndRollITS..." && /usr/bin/RockAndRollITS && sleep 1
+echo -e "Starting GlobalMgrSvr..." && /usr/bin/GlobalMgrSvr && sleep 1
 countdown "00:00:12" 
 
 FILES=/etc/cabal/PartySvr_*.ini
@@ -38,7 +38,7 @@ for f in $FILES
 do
   out=${f/'/etc/cabal/'/}
   out=${out/'.ini'/}
-  echo -e "Starting $out..." && usr/bin/$out && sleep 1
+  echo -e "Starting $out..." && /usr/bin/$out && sleep 1
 done
 
 FILES=/etc/cabal/ChatNode_*.ini
@@ -46,17 +46,17 @@ for f in $FILES
 do
   out=${f/'/etc/cabal/'/}
   out=${out/'.ini'/}
-  echo -e "Starting $out..." && usr/bin/$out && sleep 1
+  echo -e "Starting $out..." && /usr/bin/$out && sleep 1
 done
 
-echo -e "Starting EventMgrSvr..." && usr/bin/EventMgrSvr && sleep 1
+echo -e "Starting EventMgrSvr..." && /usr/bin/EventMgrSvr && sleep 1
 
 FILES=/etc/cabal/LoginSvr_*.ini
 for f in $FILES
 do
   out=${f/'/etc/cabal/'/}
   out=${out/'.ini'/}
-  echo -e "Starting $out..." && usr/bin/$out && sleep 1
+  echo -e "Starting $out..." && /usr/bin/$out && sleep 1
 done
 
 FILES=/etc/cabal/AgentShop_*.ini
@@ -64,7 +64,7 @@ for f in $FILES
 do
   out=${f/'/etc/cabal/'/}
   out=${out/'.ini'/}
-  echo -e "Starting $out..." && usr/bin/$out && sleep 1
+  echo -e "Starting $out..." && /usr/bin/$out && sleep 1
 done
 
 FILES=/etc/cabal/WorldSvr_*.ini
@@ -72,7 +72,7 @@ for f in $FILES
 do
   out=${f/'/etc/cabal/'/}
   out=${out/'.ini'/}
-  echo -e "Starting $out..." && usr/bin/$out && sleep 1
+  echo -e "Starting $out..." && /usr/bin/$out && sleep 1
 done
 
 exec /usr/sbin/init

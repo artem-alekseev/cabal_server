@@ -16,7 +16,14 @@ RUN ln -s /etc/cabal/Template/sh/cabal_create_server.sh /usr/bin/cabal_create_se
 RUN ln -s /etc/cabal/Template/sh/cabal_create_chanel.sh /usr/bin/cabal_create_chanel
 RUN ln -s /etc/cabal/Template/sh/cabal_start.sh /usr/bin/cabal_start
 
+RUN chmod +x /etc/cabal/Template/sh/cabal_config.sh
+RUN chmod +x /etc/cabal/Template/sh/cabal_create_server.sh
+RUN chmod +x /etc/cabal/Template/sh/cabal_create_chanel.sh
+RUN chmod +x /etc/cabal/Template/sh/cabal_start.sh
+
 RUN mkdir -p /var/log/cabal
+
+RUN chmod -R 777 /etc/cabal
 
 RUN cabal_create_server 1
 RUN cabal_create_chanel 1 1
