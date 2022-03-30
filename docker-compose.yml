@@ -1,6 +1,16 @@
 version: '3.1'
 
 services:
+  mssql: 
+    build: 
+      context: ./db
+    ports:
+      - 1433:1433
+    volumes:
+      - ./db/data:/var/opt/mssql/data:rw
+    environment:
+      - SA_PASSWORD=${DB_PASSWORD}
+      - ACCEPT_EULA=Y
 
   server: 
     build: 
@@ -16,16 +26,7 @@ services:
       - 38151:38151
       - 38111-38120:38111-38120
       - 38170:38170
+    volumes:
+      - ./server/logs:/var/log/cabal
     depends_on:
       - mssql
-
-  mssql: 
-    build: 
-      context: ./db
-    ports:
-      - 1433:1433
-    volumes:
-      - ./db/data:/var/opt/mssql/data:rw
-    environment:
-      - SA_PASSWORD=${DB_PASSWORD}
-      - ACCEPT_EULA=Y

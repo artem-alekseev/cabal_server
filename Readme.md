@@ -47,3 +47,5 @@ in server/Dockerfile
 ```cmd
 docker-compose exec server ps -x
 ```
+
+### Service logs in server/logs folder
