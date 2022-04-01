@@ -3,21 +3,26 @@ FROM centos:7
 ARG CONNECT_IP
 ARG DB_PASSWORD
 
-RUN yum update; yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 nano;
+ENV ACCEPT_EULA=Y
+ENV DB_PASSWORD=$DB_PASSWORD
+ENV CONNECT_IP=$CONNECT_IP
+
+RUN curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+RUN yum update; yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 msodbcsql17 mssql-tools nano bind-utils 
 
 RUN ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.4 && ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.6
 
 COPY etc /etc
 COPY usr /usr
 
-RUN ln -s /etc/cabal/Template/sh/cabal_config.sh /usr/bin/cabal_config \
- && ln -s /etc/cabal/Template/sh/cabal_create_server.sh /usr/bin/cabal_create_server \
+RUN ln -s /etc/cabal/Template/sh/cabal_create_server.sh /usr/bin/cabal_create_server \
  && ln -s /etc/cabal/Template/sh/cabal_create_chanel.sh /usr/bin/cabal_create_chanel \
- && ln -s /etc/cabal/Template/sh/cabal_start.sh /usr/bin/cabal_start \ 
- && chmod +x /etc/cabal/Template/sh/cabal_config.sh \
+ && ln -s /etc/cabal/Template/sh/global_mgr_svr.sh /usr/bin/global_mgr_svr \ 
+ && ln -s /etc/cabal/Template/sh/config_db_passwd.sh /usr/bin/config_db_passwd \ 
  && chmod +x /etc/cabal/Template/sh/cabal_create_server.sh \
  && chmod +x /etc/cabal/Template/sh/cabal_create_chanel.sh \
- && chmod +x /etc/cabal/Template/sh/cabal_start.sh \
+ && chmod +x /etc/cabal/Template/sh/global_mgr_svr.sh \
+ && chmod +x /etc/cabal/Template/sh/config_db_passwd.sh \
  && mkdir -p /var/log/cabal \
  && chmod -R 777 /etc/cabal
 
@@ -30,6 +35,4 @@ RUN cabal_create_chanel 1 5
 RUN cabal_create_chanel 1 6
 RUN cabal_create_chanel 1 7
 
-RUN cabal_config $CONNECT_IP $DB_PASSWORD
-
-ENTRYPOINT ["cabal_start"]
+RUN config_db_passwd
