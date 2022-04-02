@@ -19,10 +19,12 @@ RUN ln -s /etc/cabal/Template/sh/cabal_create_server.sh /usr/bin/cabal_create_se
  && ln -s /etc/cabal/Template/sh/cabal_create_chanel.sh /usr/bin/cabal_create_chanel \
  && ln -s /etc/cabal/Template/sh/global_mgr_svr.sh /usr/bin/global_mgr_svr \ 
  && ln -s /etc/cabal/Template/sh/config_db_passwd.sh /usr/bin/config_db_passwd \ 
+ && ln -s /etc/cabal/Template/sh/world_svr_start.sh /usr/bin/world_svr_start \ 
  && chmod +x /etc/cabal/Template/sh/cabal_create_server.sh \
  && chmod +x /etc/cabal/Template/sh/cabal_create_chanel.sh \
  && chmod +x /etc/cabal/Template/sh/global_mgr_svr.sh \
  && chmod +x /etc/cabal/Template/sh/config_db_passwd.sh \
+ && chmod +x /etc/cabal/Template/sh/world_svr_start.sh \
  && mkdir -p /var/log/cabal \
  && chmod -R 777 /etc/cabal
 

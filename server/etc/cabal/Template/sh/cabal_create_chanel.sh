@@ -34,4 +34,6 @@ sed /etc/cabal/Template/conf/WorldSvr_x.ini \
 -e "s/server_idx/$serveridx/g" \
 -e "s/channel_idx/$chanelidx/g" \
 -e "s/chanel_port/$port/g" \
+-e "s/.*IPAddress=.*/IPAddress=$CONNECT_IP/g" \
+-e "s/.*AddrForClient=.*/AddrForClient=$CONNECT_IP/g" \
 > /etc/cabal/WorldSvr_${serverZero}${serveridx}_${chanelZero}${chanelidx}.ini
