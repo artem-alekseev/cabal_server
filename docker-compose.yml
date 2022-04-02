@@ -12,21 +12,328 @@ services:
       - SA_PASSWORD=${DB_PASSWORD}
       - ACCEPT_EULA=Y
 
-  server: 
+  global_db_agent: 
     build: 
       context: ./server
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
-    ports:
-      - 80:80
-      - 443:443
-      - 38101:38101
-      - 38121:38121
-      - 38151:38151
-      - 38111-38120:38111-38120
-      - 38170:38170
-    volumes:
-      - ./server/logs:/var/log/cabal
+    entrypoint: "/usr/bin/GlobalDBAgent -l -c"
     depends_on:
       - mssql
+    ports:
+      - 38180:38180
+
+  auth_db_agent: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/AuthDBAgent -l -c"
+    depends_on:
+      - mssql
+    ports:
+      - 32080:32080
+
+  cash_db_agent: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/CashDBAgent -l -c"
+    depends_on:
+      - mssql
+    ports:
+      - 38190:38190
+
+  event_db_agent: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/EventDBAgent -l -c"
+    depends_on:
+      - mssql
+    ports:
+      - 37110:37110
+
+  pc_bang_db_agent: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/PCBangDBAgent -l -c"
+    depends_on:
+      - mssql
+    ports:
+      - 38140:38140
+
+  db_agent_01: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/DBAgent_01 -l -c"
+    depends_on:
+      - mssql
+    ports:
+      - 38181:38181
+
+  rock_and_roll_its: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    restart: always
+    entrypoint: "world_svr_start /usr/bin/RockAndRollITS 60"
+    depends_on:
+      - auth_db_agent
+      - mssql
+    ports:
+      - 32001:32001
+
+  global_mgr_svr: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "global_mgr_svr"
+    depends_on:
+      - rock_and_roll_its
+      - global_db_agent
+      - mssql
+    ports:
+      - 38170:38170
+
+  party_svr_01: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/PartySvr_01 -l -c"
+    ports:
+      - 38201:38201
+
+  chat_node_01: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/ChatNode_01 -l -c"
+    depends_on:
+      - global_mgr_svr
+      - db_agent_01
+      - mssql
+    ports:
+      - 38121:38121
+
+  event_mgr_svr: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/EventMgrSvr -l -c"
+    depends_on:
+      - global_mgr_svr
+      - event_db_agent
+      - mssql
+    ports:
+      - 38171:38171
+
+  login_svr_01: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/LoginSvr_01 -l -c"
+    depends_on:
+      - global_mgr_svr
+      - global_db_agent
+      - mssql
+    ports:
+      - 38101:38101
+
+  agent_shop_01: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/AgentShop_01 -l -c"
+    depends_on:
+      - global_mgr_svr
+      - db_agent_01
+      - chat_node_01
+      - mssql
+    ports:
+      - 38151:38151
+
+  world_svr_01_01: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/WorldSvr_01_01 -l -c"
+    environment:
+      - CONNECT_IP=$CONNECT_IP
+    depends_on:
+      - global_mgr_svr
+      - party_svr_01
+      - db_agent_01
+      - cash_db_agent
+      - pc_bang_db_agent
+      - chat_node_01
+      - agent_shop_01
+      - event_mgr_svr
+      - mssql
+    ports:
+      - 38111:38111
+
+  world_svr_01_02: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    entrypoint: "/usr/bin/WorldSvr_01_02 -l -c"
+    environment:
+      - CONNECT_IP=$CONNECT_IP
+    depends_on:
+      - global_mgr_svr
+      - party_svr_01
+      - db_agent_01
+      - cash_db_agent
+      - pc_bang_db_agent
+      - chat_node_01
+      - agent_shop_01
+      - event_mgr_svr
+      - mssql
+    ports:
+      - 38112:38112
+
+  world_svr_01_03: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    restart: always
+    entrypoint: "world_svr_start /usr/bin/WorldSvr_01_03 240"
+    environment:
+      - CONNECT_IP=$CONNECT_IP
+    depends_on:
+      - global_mgr_svr
+      - party_svr_01
+      - db_agent_01
+      - cash_db_agent
+      - pc_bang_db_agent
+      - chat_node_01
+      - agent_shop_01
+      - event_mgr_svr
+      - mssql
+    ports:
+      - 38113:38113
+
+  world_svr_01_04: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    restart: always
+    entrypoint: "world_svr_start /usr/bin/WorldSvr_01_04 240"
+    environment:
+      - CONNECT_IP=$CONNECT_IP
+    depends_on:
+      - global_mgr_svr
+      - party_svr_01
+      - db_agent_01
+      - cash_db_agent
+      - pc_bang_db_agent
+      - chat_node_01
+      - agent_shop_01
+      - event_mgr_svr
+      - mssql
+    ports:
+      - 38114:38114
+
+  world_svr_01_05: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    restart: always
+    entrypoint: "world_svr_start /usr/bin/WorldSvr_01_05 240"
+    environment:
+      - CONNECT_IP=$CONNECT_IP
+    depends_on:
+      - global_mgr_svr
+      - party_svr_01
+      - db_agent_01
+      - cash_db_agent
+      - pc_bang_db_agent
+      - chat_node_01
+      - agent_shop_01
+      - event_mgr_svr
+      - mssql
+    ports:
+      - 38115:38115
+
+  world_svr_01_06: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    restart: always
+    entrypoint: "world_svr_start /usr/bin/WorldSvr_01_06 240"
+    environment:
+      - CONNECT_IP=$CONNECT_IP
+    depends_on:
+      - global_mgr_svr
+      - party_svr_01
+      - db_agent_01
+      - cash_db_agent
+      - pc_bang_db_agent
+      - chat_node_01
+      - agent_shop_01
+      - event_mgr_svr
+      - mssql
+    ports:
+      - 38116:38116
+
+  world_svr_01_07: 
+    build: 
+      context: ./server
+      args:
+        - DB_PASSWORD=$DB_PASSWORD
+        - CONNECT_IP=$CONNECT_IP
+    restart: always
+    entrypoint: "world_svr_start /usr/bin/WorldSvr_01_07 240"
+    environment:
+      - CONNECT_IP=$CONNECT_IP
+    depends_on:
+      - global_mgr_svr
+      - party_svr_01
+      - db_agent_01
+      - cash_db_agent
+      - pc_bang_db_agent
+      - chat_node_01
+      - agent_shop_01
+      - event_mgr_svr
+      - mssql
+    ports:
+      - 38117:38117

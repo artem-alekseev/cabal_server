@@ -1,6 +1,6 @@
 ## Installing
 
-### Docker
+## Docker
 
 Install [Docker](https://www.docker.com/get-started)
 
@@ -12,40 +12,55 @@ Use a strong password for mssql with special symbols, numbers, and uppercase sym
 
 Otherwise, your container will not start.
 
-### Database
+## Database
 
 ```cmd
 docker-compose up -d --build mssql
-docker-compose exec mssql sh restoredb.sh //enter password db from .env
+docker-compose exec mssql sh restoredb.sh
 ```
 
-### Server
+## Server
+```cmd
+docker-compose build
+```
+```cmd
+docker-compose up -d global_db_agent auth_db_agent cash_db_agent event_db_agent pc_bang_db_agent db_agent_01 rock_and_roll_its
+```
 
 ```cmd
-docker-compose up -d --build server
+docker-compose up -d global_mgr_svr
+```
+wait loading global_mgr_svr (~30 sec)
+
+```cmd
+docker-compose up -d party_svr_01 chat_node_01 event_mgr_svr login_svr_01 agent_shop_01
 ```
 
-If you don't use all chanels, comment 
+start world server (channels)
 
-```docker
-
-RUN cabal_create_server 1
-RUN cabal_create_chanel 1 1
-#RUN cabal_create_chanel 1 2
-#RUN cabal_create_chanel 1 3
-#RUN cabal_create_chanel 1 4
-#RUN cabal_create_chanel 1 5
-#RUN cabal_create_chanel 1 6
-#RUN cabal_create_chanel 1 7
-
+```cmd
+docker-compose up -d world_svr_01_01
+```
+```cmd
+docker-compose up -d world_svr_01_02
 ```
 
-in server/Dockerfile
-
+start war channels (war channels auto restart every 4 hours)
+```cmd
+docker-compose up -d world_svr_01_03 world_svr_01_04 world_svr_01_05 world_svr_01_06 world_svr_01_07
+```
 ### Service status
 
 ```cmd
-docker-compose exec server ps -x
+docker-compose ps
 ```
 
-### Service logs in server/logs folder
+### Service logs
+
+```cmd
+docker-compose logs container_name
+```
+example
+```cmd
+docker-compose logs global_mgr_svr
+```
