@@ -26,7 +26,7 @@ do
     -e "s/SEXP_RATE/$new_sexp_rate/g" \
     -e "s/CEXP_RATE/$new_cexp_rate/g" \
     -e "s/DROP_RATE/$new_drop_rate/g" \
-    -e "s/ALZ_RATE/$new_alzb_rate/g" \
+    -e "s/MALZ_RATE/$new_alzb_rate/g" \
     -e "s/BALZ_RATE/$new_alz_rate/g" \
     -e "s/PEXP_RATE/$new_pexp_rate/g" \
     -e "s/WEXP_RATE/$new_wexp_rate/g" \
