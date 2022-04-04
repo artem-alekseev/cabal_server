@@ -18,11 +18,18 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/GlobalDBAgent -l -c"
     depends_on:
       - mssql
-    ports:
-      - 38180:38180
 
   auth_db_agent: 
     build: 
@@ -30,11 +37,18 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/AuthDBAgent -l -c"
     depends_on:
       - mssql
-    ports:
-      - 32080:32080
 
   cash_db_agent: 
     build: 
@@ -42,11 +56,18 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/CashDBAgent -l -c"
     depends_on:
       - mssql
-    ports:
-      - 38190:38190
 
   event_db_agent: 
     build: 
@@ -54,11 +75,18 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/EventDBAgent -l -c"
     depends_on:
       - mssql
-    ports:
-      - 37110:37110
 
   pc_bang_db_agent: 
     build: 
@@ -66,11 +94,18 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/PCBangDBAgent -l -c"
     depends_on:
       - mssql
-    ports:
-      - 38140:38140
 
   db_agent_01: 
     build: 
@@ -78,11 +113,18 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/DBAgent_01 -l -c"
     depends_on:
       - mssql
-    ports:
-      - 38181:38181
 
   rock_and_roll_its: 
     build: 
@@ -90,13 +132,20 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     restart: always
     entrypoint: "world_svr_start /usr/bin/RockAndRollITS 60"
     depends_on:
       - auth_db_agent
       - mssql
-    ports:
-      - 32001:32001
 
   global_mgr_svr: 
     build: 
@@ -104,13 +153,20 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "global_mgr_svr"
     depends_on:
       - rock_and_roll_its
       - global_db_agent
       - mssql
-    ports:
-      - 38170:38170
 
   party_svr_01: 
     build: 
@@ -118,9 +174,16 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/PartySvr_01 -l -c"
-    ports:
-      - 38201:38201
 
   chat_node_01: 
     build: 
@@ -128,13 +191,20 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/ChatNode_01 -l -c"
     depends_on:
       - global_mgr_svr
       - db_agent_01
       - mssql
-    ports:
-      - 38121:38121
 
   event_mgr_svr: 
     build: 
@@ -142,13 +212,20 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/EventMgrSvr -l -c"
     depends_on:
       - global_mgr_svr
       - event_db_agent
       - mssql
-    ports:
-      - 38171:38171
 
   login_svr_01: 
     build: 
@@ -156,6 +233,15 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/LoginSvr_01 -l -c"
     depends_on:
       - global_mgr_svr
@@ -170,14 +256,21 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/AgentShop_01 -l -c"
     depends_on:
       - global_mgr_svr
       - db_agent_01
       - chat_node_01
       - mssql
-    ports:
-      - 38151:38151
 
   world_svr_01_01: 
     build: 
@@ -185,9 +278,16 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/WorldSvr_01_01 -l -c"
-    environment:
-      - CONNECT_IP=$CONNECT_IP
     depends_on:
       - global_mgr_svr
       - party_svr_01
@@ -207,9 +307,16 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     entrypoint: "/usr/bin/WorldSvr_01_02 -l -c"
-    environment:
-      - CONNECT_IP=$CONNECT_IP
     depends_on:
       - global_mgr_svr
       - party_svr_01
@@ -229,10 +336,17 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     restart: always
     entrypoint: "world_svr_start /usr/bin/WorldSvr_01_03 240"
-    environment:
-      - CONNECT_IP=$CONNECT_IP
     depends_on:
       - global_mgr_svr
       - party_svr_01
@@ -252,10 +366,17 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     restart: always
     entrypoint: "world_svr_start /usr/bin/WorldSvr_01_04 240"
-    environment:
-      - CONNECT_IP=$CONNECT_IP
     depends_on:
       - global_mgr_svr
       - party_svr_01
@@ -275,10 +396,17 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     restart: always
     entrypoint: "world_svr_start /usr/bin/WorldSvr_01_05 240"
-    environment:
-      - CONNECT_IP=$CONNECT_IP
     depends_on:
       - global_mgr_svr
       - party_svr_01
@@ -298,10 +426,17 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     restart: always
     entrypoint: "world_svr_start /usr/bin/WorldSvr_01_06 240"
-    environment:
-      - CONNECT_IP=$CONNECT_IP
     depends_on:
       - global_mgr_svr
       - party_svr_01
@@ -321,10 +456,17 @@ services:
       args:
         - DB_PASSWORD=$DB_PASSWORD
         - CONNECT_IP=$CONNECT_IP
+        - EXP_RATE=$EXP_RATE
+        - SEXP_RATE=$SEXP_RATE
+        - CEXP_RATE=$CEXP_RATE
+        - DROP_RATE=$DROP_RATE
+        - ALZ_RATE=$ALZ_RATE
+        - BALZ_RATE=$BALZ_RATE
+        - PEXP_RATE=$PEXP_RATE
+        - WEXP_RATE=$WEXP_RATE
+        - ITEMS_PER_DROP=$ITEMS_PER_DROP
     restart: always
     entrypoint: "world_svr_start /usr/bin/WorldSvr_01_07 240"
-    environment:
-      - CONNECT_IP=$CONNECT_IP
     depends_on:
       - global_mgr_svr
       - party_svr_01

@@ -8,7 +8,19 @@ Install [Docker](https://www.docker.com/get-started)
 
 Copy .env.example to .env and configurate .env
 
-Use a strong password for mssql with special symbols, numbers, and uppercase symbols
+```
+DB_PASSWORD=password_from_db //Use a strong password for mssql with special symbols, numbers, and uppercase symbols
+CONNECT_IP=192.168.1.1 // IP server
+EXP_RATE=100 // Enter EXP rate multiplier, e.g. 5 for 5x 
+SEXP_RATE=100 // Enter Skill EXP rate multiplier
+CEXP_RATE=100 // Enter Craft EXP rate multiplier
+DROP_RATE=2 // Enter drop rate multiplier (over 5 is bad)
+ALZ_RATE=100 // Enter Alz rate multiplier
+BALZ_RATE=100 // Enter Alz bomb rate multiplier
+PEXP_RATE=100 // Enter Pet EXP multiplier
+WEXP_RATE=100 // Enter War EXP multiplier
+ITEMS_PER_DROP=2 // Enter number of items per drop
+```
 
 Otherwise, your container will not start.
 

@@ -10,6 +10,34 @@ do
   then
     leadingZero="0"
   fi
+
+  #Multiple
+  let new_exp_rate=$EXP_RATE*100
+  let new_sexp_rate=$SEXP_RATE*100
+  let new_cexp_rate=$CEXP_RATE*100
+  let new_drop_rate=$DROP_RATE*100
+  let new_alz_rate=$ALZ_RATE*100
+  let new_alzb_rate=$BALZ_RATE*100
+  let new_pexp_rate=$PEXP_RATE*100
+  let new_wexp_rate=$WEXP_RATE*100
+
+  sed /etc/cabal/Data/Multiple.scp \
+    -e "s/MEXP_RATE/$new_exp_rate/g" \
+    -e "s/SEXP_RATE/$new_sexp_rate/g" \
+    -e "s/CEXP_RATE/$new_cexp_rate/g" \
+    -e "s/DROP_RATE/$new_drop_rate/g" \
+    -e "s/ALZ_RATE/$new_alzb_rate/g" \
+    -e "s/BALZ_RATE/$new_alz_rate/g" \
+    -e "s/PEXP_RATE/$new_pexp_rate/g" \
+    -e "s/WEXP_RATE/$new_wexp_rate/g" \
+    > /etc/cabal/Data/Multiple.scp.tmp
+    mv -f /etc/cabal/Data/Multiple.scp.tmp /etc/cabal/Data/Multiple.scp
+
+  #Const
+  sed /etc/cabal/Data/Const.scp \
+  -e "s/ITEMS_PER_DROP/$ITEMS_PER_DROP/g" \
+  > /etc/cabal/Data/Const.scp.tmp
+  mv /etc/cabal/Data/Const.scp.tmp /etc/cabal/Data/Const.scp
   
   # DBAgent
   ln -sf /usr/bin/DBAgent /usr/bin/DBAgent_$leadingZero$i
