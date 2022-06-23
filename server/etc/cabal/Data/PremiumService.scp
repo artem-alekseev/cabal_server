@@ -1,7 +1,7 @@
 [DurationSvc]	DurationSvcIdx	Type	Exp	SklExp	Drop	Craft	CraftSuccess	Inventory	Warehouse	BombAlz	GPS	Inventory2	Warehouse2	atDummy	AXP	WExp	Pet_Exp	Market_Slot	Market_Stack	Market_Dur	Point	efDummy	Pet_Slot	MarketCharge	FreeWarp	PremiumBuy	WarehouseUseFlag	Special_Inven
 0	0	4	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0
 0	0	0	25	25	25	25	0	0	0	300	1	0	0	1	0	10	10	0	0	0	100	1	0	0	0	0	0	0
-1	1	0	25	50	25	25	0	1	1	0	1	1	0	1	1500	300	25	2	15	0	100	1	0	0	0	0	1	0
+1	1	0	25	50	25	25	0	1	1	0	1	1	0	1	700	25	25	2	15	0	100	1	0	0	0	0	0	0
 2	2	0	25	25	0	0	0	0	0	0	1	0	0	1	25	0	0	2	15	0	0	1	0	0	0	0	0	0
 3	3	0	0	0	0	25	0	1	0	0	1	0	0	1	0	0	0	2	15	0	0	1	0	0	0	0	0	0
 4	4	0	0	0	25	0	0	1	0	0	1	0	0	1	0	0	0	2	15	0	0	1	0	0	0	0	0	0

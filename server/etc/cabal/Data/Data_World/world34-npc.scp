@@ -34,11 +34,11 @@
 30	0	51	0	0	1	0
 
 [WarpLst]	NpcsIdx	NSetIdx	TargetIdx	LV	Fee	Type
-0	24	0	283	135	0	0
-1	25	0	284	135	0	0
-2	26	0	285	135	0	0
-3	27	0	286	135	0	0
-4	28	0	287	135	0	0
-5	29	0	288	135	0	0
+0	24	0	283	100	0	0
+1	25	0	284	100	0	0
+2	26	0	285	100	0	0
+3	27	0	286	100	0	0
+4	28	0	287	100	0	0
+5	29	0	288	100	0	0
 
 [SkillLst]	NSetIdx	NpcsIdx	SkillIdx	SkillLv	SkillBook

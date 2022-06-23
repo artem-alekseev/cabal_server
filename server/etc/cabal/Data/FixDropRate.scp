@@ -1,0 +1,87 @@
+8810	17	4255	384	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8811	17	4255	384	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel sorte+4
+8812	17	4255	648	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8813	17	4255	648	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel sorte+4
+8814	17	4255	649	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8815	17	4255	649	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel sorte+4
+8816	17	4255	1177	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8817	17	4255	1177	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel sorte+4
+8818	17	4255	296	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8819	17	4255	296	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel sorte+4
+8820	18	4253	1177	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8821	18	4253	1177	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel sorte+4
+8822	18	4253	649	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8823	18	4253	649	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Sorte+4
+8824	18	4253	648	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8825	18	4253	648	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Sorte+4
+8826	22	4252	1177	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8827	22	4252	1177	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel sorte+4
+8828	22	4252	649	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8829	22	4252	649	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Sorte+4
+8830	22	4252	648	3466	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8831	22	4252	648	3467	0	.081225	1	200	0	0	0	0	0	0 //Drop Anel Sorte+4
+8832	51	4260	1177	3466	0	.001	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8833	51	4260	1177	3467	0	.001	1	200	0	0	0	0	0	0 //Drop Anel sorte+4
+8834	51	4260	649	3466	0	.001	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8835	51	4260	649	3467	0	.001	1	200	0	0	0	0	0	0 //Drop Anel Sorte+4
+8836	51	4260	648	3466	0	.001	1	200	0	0	0	0	0	0 //Drop Anel Crítico+4
+8837	51	4260	648	3467	0	.001	1	200	0	0	0	0	0	0 //Drop Anel Sorte+4
+8838	32	0	1177	3464	0	.001	1	200	0	0	0	0	0	0 //Drop Brinco Resistente +9
+8839	32	0	1177	3465	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco do Vampiro +9
+8840	32	0	649	3464	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco Resistente +9
+8841	32	0	649	3465	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco do Vampiro +9
+8842	32	0	648	3464	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco Resistente +9
+8843	32	0	648	3465	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco do Vampiro +9
+8844	49	4110	1177	3464	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco Resistente +9
+8845	49	4110	1177	3465	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco do Vampiro +9
+8846	49	4110	649	3464	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco Resistente +9
+8847	49	4110	649	3465	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco do Vampiro +9
+8848	49	4110	648	3464	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco Resistente +9
+8849	49	4110	648	3465	0	.081225	1	200	0	0	0	0	0	0 //Drop Brinco do Vampiro +9
+8850	51	4260	1177	931	0	.001	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +5
+8851	51	4260	649	931	0	.001	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +5
+8852	51	4260	648	931	0	.001	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +5
+8853	22	4252	1177	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8854	22	4252	649	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8855	22	4252	648	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8856	17	4255	384	930	0	.081225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8857	17	4255	648	930	0	.081225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8858	17	4255	649	930	0	.081225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8859	17	4255	1177	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8860	17	4255	296	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8861	18	4253	1177	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8862	18	4253	649	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8863	18	4253	648	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4 //Templo Desperto
+8864	32	0	1177	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4 //Templo Esquecido 2ss
+8865	32	0	649	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8866	32	0	648	930	0	.081225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8867	68	0	1177	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4 // Posto avançado
+8868	68	0	649	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8869	68	0	648	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8870	68	0	647	930	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +4
+8871	34	4098	1177	929	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Altar de Siena 1ss
+8872	34	4098	1174	929	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Altar de Siena 1ss
+8873	34	4098	649	929	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Altar de Siena 1ss
+8874	34	4098	648	929	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Altar de Siena 1ss
+8875	35	4099	647	929	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Altar de Siena 2ss
+8876	35	4099	648	929	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Altar de Siena 2ss
+8877	35	4099	649	929	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Altar de Siena 2ss
+8878	35	4099	1177	929	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Altar de Siena 2ss
+8879	33	4097	1177	929	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Ilha Esquecida
+8880	33	4097	649	929	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Ilha Esquecida
+8881	33	4097	648	929	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +3//Ilha Esquecida
+8882	13	253	647	928	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +2
+8883	13	253	648	928	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +2
+8884	13	253	649	928	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +2
+8885	13	253	1177	928	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +2
+8886	13	218	647	927	0	.081225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8887	13	218	648	927	0	.081225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8888	13	218	649	927	0	.081225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8889	13	218	1177	927	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8890	24	0	647	927	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8891	24	0	648	927	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8892	24	0	649	927	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8893	24	0	1177	927	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8894	23	0	648	927	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8895	23	0	649	927	0	.181225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225
+8896	23	0	1177	927	0	.281225	1	200	0	0	0	0	0	0 //Drop Amuleto da Resistência +.181225

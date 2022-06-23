@@ -1,0 +1,20 @@
+
+
+[NpcPos]	Flags	Index	PosX	PosY	Type	IsRangeCheck
+0	0	1	232	131	1	0
+1	0	2	225	68	6	0
+2	0	3	228	67	1	0
+3	0	4	230	129	6	0
+4	0	5	143	124	6	0
+5	0	6	82	111	1	0
+6	0	7	27	118	6	0
+7	0	50	0	0	1	0
+8	0	51	0	0	1	0
+
+[WarpLst]	NpcsIdx	NSetIdx	TargetIdx	LV	Fee	Type
+0	2	0	699	190	0	0
+1	4	0	700	190	0	0
+2	5	0	701	190	0	0
+3	7	0	702	190	0	0
+
+[SkillLst]	NSetIdx	NpcsIdx	SkillIdx	SkillLv	SkillBook

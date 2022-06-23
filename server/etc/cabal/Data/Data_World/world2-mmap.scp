@@ -263,6 +263,7 @@
 259	251	229	150	11	11	12000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	0
 260	251	194	157	11	11	12000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	0
 261	251	231	191	11	11	12000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	0
-
+262	759	158	114	11	11	3600000	1	<null>	<null>	<null>	0	0	1	1	44	1	0	0
+263	149	175	81	11	11	43200000	1	<null>	<null>	<null>	0	1	1	2	3	0	0	30000
 
 [MissionMMAP]	QDungeonIdx	MMapidx	Cells

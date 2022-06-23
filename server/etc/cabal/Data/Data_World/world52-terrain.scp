@@ -2,7 +2,7 @@
 
 
 [Terrain]	TerrainX	TerrainY	WarpIdxForDead	WarpIdxForRetn	WarpIdxForLOut	DmgMin	DmgMax	WarControl
-0	0	0	337	337	341	0	0	0
+0	0	0	604	604	185	0	0	0
 
 [CommDrop]	TerrainIdx	ItemKind	ItemOpt	DropRate	MinLv	MaxLv	Group	MaxDropCnt	OptPoolIdx	DurationIdx
 

@@ -1,3 +1,824 @@
 [LevelRange]	Index	MinLev	MaxLev
+0	1	1	64
+1	2	65	99
+2	3	100	119
+3	4	120	169
+4	5	170	200
 
-[Reward]	RewardIdx	BattleStyle	LevelRangeIndex	ElapsedTime	ItemIdx	ItemOpt
+[Reward]	RewardIdx	BattleStyle	LevelRangeIndex	ElapsedTime	ItemIdx	ItemOpt	DurationIdx
+0	1	1	1	10	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+1	2	2	1	10	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+2	3	3	1	10	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+3	4	4	1	10	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+4	5	5	1	10	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+5	6	6	1	10	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+6	7	1	1	10	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+7	8	2	1	10	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+8	9	3	1	10	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+9	10	4	1	10	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+10	11	5	1	10	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+11	12	6	1	10	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 10 Minutes
+12	13	1	1	10	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 10 Minutes
+13	14	2	1	10	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 10 Minutes
+14	15	3	1	10	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 10 Minutes
+15	16	4	1	10	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 10 Minutes
+16	17	5	1	10	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 10 Minutes
+17	18	6	1	10	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 10 Minutes
+18	19	1	1	10	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 10 Minutes
+19	20	2	1	10	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 10 Minutes
+20	21	3	1	10	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 10 Minutes
+21	22	4	1	10	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 10 Minutes
+22	23	5	1	10	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 10 Minutes
+23	24	6	1	10	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 10 Minutes
+24	25	1	1	10	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 10 Minutes
+25	26	2	1	10	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 10 Minutes
+26	27	3	1	10	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 10 Minutes
+27	28	4	1	10	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 10 Minutes
+28	29	5	1	10	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 10 Minutes
+29	30	6	1	10	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 10 Minutes
+30	31	1	2	20	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+31	32	2	2	20	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+32	33	3	2	20	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+33	34	4	2	20	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+34	35	5	2	20	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+35	36	6	2	20	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+36	37	1	2	20	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+37	38	2	2	20	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+38	39	3	2	20	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+39	40	4	2	20	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+40	41	5	2	20	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+41	42	6	2	20	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 10 Minutes
+42	43	1	2	20	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 10 Minutes
+43	44	2	2	20	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 10 Minutes
+44	45	3	2	20	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 10 Minutes
+45	46	4	2	20	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 10 Minutes
+46	47	5	2	20	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 10 Minutes
+47	48	6	2	20	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 10 Minutes
+48	49	1	2	20	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 10 Minutes
+49	50	2	2	20	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 10 Minutes
+50	51	3	2	20	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 10 Minutes
+51	52	4	2	20	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 10 Minutes
+52	53	5	2	20	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 10 Minutes
+53	54	6	2	20	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 10 Minutes
+54	55	1	2	20	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 10 Minutes
+55	56	2	2	20	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 10 Minutes
+56	57	3	2	20	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 10 Minutes
+57	58	4	2	20	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 10 Minutes
+58	59	5	2	20	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 10 Minutes
+59	60	6	2	20	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 10 Minutes
+60	61	1	3	30	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+61	62	2	3	30	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+62	63	3	3	30	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+63	64	4	3	30	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+64	65	5	3	30	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+65	66	6	3	30	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+66	67	1	3	30	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+67	68	2	3	30	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+68	69	3	3	30	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+69	70	4	3	30	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+70	71	5	3	30	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+71	72	6	3	30	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 10 Minutes
+72	73	1	3	30	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 10 Minutes
+73	74	2	3	30	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 10 Minutes
+74	75	3	3	30	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 10 Minutes
+75	76	4	3	30	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 10 Minutes
+76	77	5	3	30	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 10 Minutes
+77	78	6	3	30	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 10 Minutes
+78	79	1	3	30	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 10 Minutes
+79	80	2	3	30	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 10 Minutes
+80	81	3	3	30	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 10 Minutes
+81	82	4	3	30	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 10 Minutes
+82	83	5	3	30	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 10 Minutes
+83	84	6	3	30	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 10 Minutes
+84	85	1	3	30	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 10 Minutes
+85	86	2	3	30	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 10 Minutes
+86	87	3	3	30	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 10 Minutes
+87	88	4	3	30	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 10 Minutes
+88	89	5	3	30	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 10 Minutes
+89	90	6	3	30	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 10 Minutes
+90	91	1	4	40	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+91	92	2	4	40	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+92	93	3	4	40	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+93	94	4	4	40	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+94	95	5	4	40	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+95	96	6	4	40	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+96	97	1	4	40	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+97	98	2	4	40	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+98	99	3	4	40	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+99	100	4	4	40	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+100	101	5	4	40	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+101	102	6	4	40	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.120-169 Online 10 Minutes
+102	103	1	4	40	3098	1	1 :Holy Water Of Critical Strike x1 :Lv.120-169 Online 10 Minutes
+103	104	2	4	40	3098	1	1 :Holy Water Of Critical Strike x1 :Lv.120-169 Online 10 Minutes
+104	105	3	4	40	3098	1	1 :Holy Water Of Critical Strike x1 :Lv.120-169 Online 10 Minutes
+105	106	4	4	40	3098	1	1 :Holy Water Of Critical Strike x1 :Lv.120-169 Online 10 Minutes
+106	107	5	4	40	3098	1	1 :Holy Water Of Critical Strike x1 :Lv.120-169 Online 10 Minutes
+107	108	6	4	40	3098	1	1 :Holy Water Of Critical Strike x1 :Lv.120-169 Online 10 Minutes
+108	109	1	4	40	3099	1	1 :Holy Water Of Fighter x1 :Lv.120-169 Online 10 Minutes
+109	110	2	4	40	3099	1	1 :Holy Water Of Fighter x1 :Lv.120-169 Online 10 Minutes
+110	111	3	4	40	3099	1	1 :Holy Water Of Fighter x1 :Lv.120-169 Online 10 Minutes
+111	112	4	4	40	3099	1	1 :Holy Water Of Fighter x1 :Lv.120-169 Online 10 Minutes
+112	113	5	4	40	3099	1	1 :Holy Water Of Fighter x1 :Lv.120-169 Online 10 Minutes
+113	114	6	4	40	3099	1	1 :Holy Water Of Fighter x1 :Lv.120-169 Online 10 Minutes
+114	115	1	4	40	3100	1	1 :Holy Water Of Sage x1 :Lv.120-169 Online 10 Minutes
+115	116	2	4	40	3100	1	1 :Holy Water Of Sage x1 :Lv.120-169 Online 10 Minutes
+116	117	3	4	40	3100	1	1 :Holy Water Of Sage x1 :Lv.120-169 Online 10 Minutes
+117	118	4	4	40	3100	1	1 :Holy Water Of Sage x1 :Lv.120-169 Online 10 Minutes
+118	119	5	4	40	3100	1	1 :Holy Water Of Sage x1 :Lv.120-169 Online 10 Minutes
+119	120	6	4	40	3100	1	1 :Holy Water Of Sage x1 :Lv.120-169 Online 10 Minutes
+120	121	1	5	50	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+121	122	2	5	50	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+122	123	3	5	50	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+123	124	4	5	50	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+124	125	5	5	50	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+125	126	6	5	50	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+126	127	1	5	50	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+127	128	2	5	50	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+128	129	3	5	50	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+129	130	4	5	50	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+130	131	5	5	50	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+131	132	6	5	50	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.170-190 Online 10 Minutes
+132	133	1	5	50	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.170-190 Online 10 Minutes
+133	134	2	5	50	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.170-190 Online 10 Minutes
+134	135	3	5	50	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.170-190 Online 10 Minutes
+135	136	4	5	50	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.170-190 Online 10 Minutes
+136	137	5	5	50	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.170-190 Online 10 Minutes
+137	138	6	5	50	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.170-190 Online 10 Minutes
+138	139	1	5	50	3099	2	1 :Holy Water Of Fighter x2 :Lv.170-190 Online 10 Minutes
+139	140	2	5	50	3099	2	1 :Holy Water Of Fighter x2 :Lv.170-190 Online 10 Minutes
+140	141	3	5	50	3099	2	1 :Holy Water Of Fighter x2 :Lv.170-190 Online 10 Minutes
+141	142	4	5	50	3099	2	1 :Holy Water Of Fighter x2 :Lv.170-190 Online 10 Minutes
+142	143	5	5	50	3099	2	1 :Holy Water Of Fighter x2 :Lv.170-190 Online 10 Minutes
+143	144	6	5	50	3099	2	1 :Holy Water Of Fighter x2 :Lv.170-190 Online 10 Minutes
+144	145	1	5	50	3100	2	1 :Holy Water Of Sage x2 :Lv.170-190 Online 10 Minutes
+145	146	2	5	50	3100	2	1 :Holy Water Of Sage x2 :Lv.170-190 Online 10 Minutes
+146	147	3	5	50	3100	2	1 :Holy Water Of Sage x2 :Lv.170-190 Online 10 Minutes
+147	148	4	5	50	3100	2	1 :Holy Water Of Sage x2 :Lv.170-190 Online 10 Minutes
+148	149	5	5	50	3100	2	1 :Holy Water Of Sage x2 :Lv.170-190 Online 10 Minutes
+149	150	6	5	50	3100	2	1 :Holy Water Of Sage x2 :Lv.170-190 Online 10 Minutes
+150	151	1	1	60	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 1 Hour
+151	152	2	1	60	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 1 Hour
+152	153	3	1	60	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 1 Hour
+153	154	4	1	60	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 1 Hour
+154	155	5	1	60	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 1 Hour
+155	156	6	1	60	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 1 Hour
+156	157	1	1	60	12	50	1 :Return Stonex50 :Lv.1-64 Online 1 Hour
+157	158	2	1	60	12	50	1 :Return Stonex50 :Lv.1-64 Online 1 Hour
+158	159	3	1	60	12	50	1 :Return Stonex50 :Lv.1-64 Online 1 Hour
+159	160	4	1	60	12	50	1 :Return Stonex50 :Lv.1-64 Online 1 Hour
+160	161	5	1	60	12	50	1 :Return Stonex50 :Lv.1-64 Online 1 Hour
+161	162	6	1	60	12	50	1 :Return Stonex50 :Lv.1-64 Online 1 Hour
+162	163	1	2	70	578	1108	1 :Map Part x1 :Lv.65-99 Online 1 Hour
+163	164	2	2	70	578	1108	1 :Map Part x1 :Lv.65-99 Online 1 Hour
+164	165	3	2	70	578	1108	1 :Map Part x1 :Lv.65-99 Online 1 Hour
+165	166	4	2	70	578	1108	1 :Map Part x1 :Lv.65-99 Online 1 Hour
+166	167	5	2	70	578	1108	1 :Map Part x1 :Lv.65-99 Online 1 Hour
+167	168	6	2	70	578	1108	1 :Map Part x1 :Lv.65-99 Online 1 Hour
+168	169	1	2	70	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 1 Hour
+169	170	2	2	70	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 1 Hour
+170	171	3	2	70	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 1 Hour
+171	172	4	2	70	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 1 Hour
+172	173	5	2	70	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 1 Hour
+173	174	6	2	70	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 1 Hour
+174	175	1	3	80	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 1 Hour
+175	176	2	3	80	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 1 Hour
+176	177	3	3	80	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 1 Hour
+177	178	4	3	80	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 1 Hour
+178	179	5	3	80	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 1 Hour
+179	180	6	3	80	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 1 Hour
+180	181	1	3	80	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 1 Hour
+181	182	2	3	80	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 1 Hour
+182	183	3	3	80	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 1 Hour
+183	184	4	3	80	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 1 Hour
+184	185	5	3	80	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 1 Hour
+185	186	6	3	80	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 1 Hour
+186	187	1	4	90	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 1 Hour
+187	188	2	4	90	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 1 Hour
+188	189	3	4	90	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 1 Hour
+189	190	4	4	90	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 1 Hour
+190	191	5	4	90	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 1 Hour
+191	192	6	4	90	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 1 Hour
+192	193	1	4	90	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 1 Hour
+193	194	2	4	90	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 1 Hour
+194	195	3	4	90	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 1 Hour
+195	196	4	4	90	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 1 Hour
+196	197	5	4	90	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 1 Hour
+197	198	6	4	90	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 1 Hour
+198	199	1	5	100	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 1 Hour
+199	200	2	5	100	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 1 Hour
+200	201	3	5	100	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 1 Hour
+201	202	4	5	100	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 1 Hour
+202	203	5	5	100	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 1 Hour
+203	204	6	5	100	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 1 Hour
+204	205	1	5	100	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 1 Hour
+205	206	2	5	100	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 1 Hour
+206	207	3	5	100	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 1 Hour
+207	208	4	5	100	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 1 Hour
+208	209	5	5	100	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 1 Hour
+209	210	6	5	100	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 1 Hour
+210	211	1	1	120	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+211	212	2	1	120	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+212	213	3	1	120	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+213	214	4	1	120	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+214	215	5	1	120	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+215	216	6	1	120	4	50	1 :Hp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+216	217	1	1	120	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+217	218	2	1	120	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+218	219	3	1	120	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+219	220	4	1	120	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+220	221	5	1	120	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+221	222	6	1	120	7	50	1 :Mp Potion(Lv.2)x50 :Lv.1-64 Online 2 Hour
+222	223	1	1	120	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 2 Hour
+223	224	2	1	120	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 2 Hour
+224	225	3	1	120	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 2 Hour
+225	226	4	1	120	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 2 Hour
+226	227	5	1	120	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 2 Hour
+227	228	6	1	120	664	1281	1 :Sharpness Potion x1 :Lv.1-64 Online 2 Hour
+228	229	1	1	120	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 2 Hour
+229	230	2	1	120	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 2 Hour
+230	231	3	1	120	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 2 Hour
+231	232	4	1	120	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 2 Hour
+232	233	5	1	120	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 2 Hour
+233	234	6	1	120	660	1281	1 :Hardness Potion x1 :Lv.1-64 Online 2 Hour
+234	235	1	1	120	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 2 Hour
+235	236	2	1	120	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 2 Hour
+236	237	3	1	120	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 2 Hour
+237	238	4	1	120	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 2 Hour
+238	239	5	1	120	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 2 Hour
+239	240	6	1	120	661	1281	1 :Manacondense Potion x1 :Lv.1-64 Online 2 Hour
+240	241	1	2	130	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+241	242	2	2	130	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+242	243	3	2	130	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+243	244	4	2	130	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+244	245	5	2	130	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+245	246	6	2	130	5	50	1 :Hp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+246	247	1	2	130	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+247	248	2	2	130	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+248	249	3	2	130	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+249	250	4	2	130	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+250	251	5	2	130	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+251	252	6	2	130	8	50	1 :Mp Potion(Lv.3)x50 :Lv.65-99 Online 2 Hour
+252	253	1	2	130	648	3	1 :Fury Potion(Lv.1) x3 :Lv.65-99 Online 2 Hour
+253	254	2	2	130	648	3	1 :Fury Potion(Lv.1) x3 :Lv.65-99 Online 2 Hour
+254	255	3	2	130	648	3	1 :Fury Potion(Lv.1) x3 :Lv.65-99 Online 2 Hour
+255	256	4	2	130	648	3	1 :Fury Potion(Lv.1) x3 :Lv.65-99 Online 2 Hour
+256	257	5	2	130	648	3	1 :Fury Potion(Lv.1) x3 :Lv.65-99 Online 2 Hour
+257	258	6	2	130	648	3	1 :Fury Potion(Lv.1) x3 :Lv.65-99 Online 2 Hour
+258	259	1	3	140	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+259	260	2	3	140	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+260	261	3	3	140	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+261	262	4	3	140	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+262	263	5	3	140	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+263	264	6	3	140	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+264	265	1	3	140	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+265	266	2	3	140	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+266	267	3	3	140	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+267	268	4	3	140	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+268	269	5	3	140	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+269	270	6	3	140	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 2 Hour
+270	271	1	3	140	648	5	1 :Fury Potion(Lv.1) x5 :Lv.100-119 Online 2 Hour
+271	272	2	3	140	648	5	1 :Fury Potion(Lv.1) x5 :Lv.100-119 Online 2 Hour
+272	273	3	3	140	648	5	1 :Fury Potion(Lv.1) x5 :Lv.100-119 Online 2 Hour
+273	274	4	3	140	648	5	1 :Fury Potion(Lv.1) x5 :Lv.100-119 Online 2 Hour
+274	275	5	3	140	648	5	1 :Fury Potion(Lv.1) x5 :Lv.100-119 Online 2 Hour
+275	276	6	3	140	648	5	1 :Fury Potion(Lv.1) x5 :Lv.100-119 Online 2 Hour
+276	277	1	4	150	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.120-169 Online 2 Hour
+277	278	2	4	150	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.120-169 Online 2 Hour
+278	279	3	4	150	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.120-169 Online 2 Hour
+279	280	4	4	150	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.120-169 Online 2 Hour
+280	281	5	4	150	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.120-169 Online 2 Hour
+281	282	6	4	150	3098	2	1 :Holy Water Of Critical Strike x2 :Lv.120-169 Online 2 Hour
+282	283	1	4	150	3099	2	1 :Holy Water Of Fighter x2 :Lv.120-169 Online 2 Hour
+283	284	2	4	150	3099	2	1 :Holy Water Of Fighter x2 :Lv.120-169 Online 2 Hour
+284	285	3	4	150	3099	2	1 :Holy Water Of Fighter x2 :Lv.120-169 Online 2 Hour
+285	286	4	4	150	3099	2	1 :Holy Water Of Fighter x2 :Lv.120-169 Online 2 Hour
+286	287	5	4	150	3099	2	1 :Holy Water Of Fighter x2 :Lv.120-169 Online 2 Hour
+287	288	6	4	150	3099	2	1 :Holy Water Of Fighter x2 :Lv.120-169 Online 2 Hour
+288	289	1	4	150	3100	2	1 :Holy Water Of Sage x2 :Lv.120-169 Online 2 Hour
+289	290	2	4	150	3100	2	1 :Holy Water Of Sage x2 :Lv.120-169 Online 2 Hour
+290	291	3	4	150	3100	2	1 :Holy Water Of Sage x2 :Lv.120-169 Online 2 Hour
+291	292	4	4	150	3100	2	1 :Holy Water Of Sage x2 :Lv.120-169 Online 2 Hour
+292	293	5	4	150	3100	2	1 :Holy Water Of Sage x2 :Lv.120-169 Online 2 Hour
+293	294	6	4	150	3100	2	1 :Holy Water Of Sage x2 :Lv.120-169 Online 2 Hour
+294	295	1	5	160	3098	4	1 :Holy Water Of Critical Strike x4 :Lv.170-190 Online 2 Hour
+295	296	2	5	160	3098	4	1 :Holy Water Of Critical Strike x4 :Lv.170-190 Online 2 Hour
+296	297	3	5	160	3098	4	1 :Holy Water Of Critical Strike x4 :Lv.170-190 Online 2 Hour
+297	298	4	5	160	3098	4	1 :Holy Water Of Critical Strike x4 :Lv.170-190 Online 2 Hour
+298	299	5	5	160	3098	4	1 :Holy Water Of Critical Strike x4 :Lv.170-190 Online 2 Hour
+299	300	6	5	160	3098	4	1 :Holy Water Of Critical Strike x4 :Lv.170-190 Online 2 Hour
+300	301	1	5	160	3099	4	1 :Holy Water Of Fighter x4 :Lv.170-190 Online 2 Hour
+301	302	2	5	160	3099	4	1 :Holy Water Of Fighter x4 :Lv.170-190 Online 2 Hour
+302	303	3	5	160	3099	4	1 :Holy Water Of Fighter x4 :Lv.170-190 Online 2 Hour
+303	304	4	5	160	3099	4	1 :Holy Water Of Fighter x4 :Lv.170-190 Online 2 Hour
+304	305	5	5	160	3099	4	1 :Holy Water Of Fighter x4 :Lv.170-190 Online 2 Hour
+305	306	6	5	160	3099	4	1 :Holy Water Of Fighter x4 :Lv.170-190 Online 2 Hour
+306	307	1	5	160	3100	4	1 :Holy Water Of Sage x4 :Lv.170-190 Online 2 Hour
+307	308	2	5	160	3100	4	1 :Holy Water Of Sage x4 :Lv.170-190 Online 2 Hour
+308	309	3	5	160	3100	4	1 :Holy Water Of Sage x4 :Lv.170-190 Online 2 Hour
+309	310	4	5	160	3100	4	1 :Holy Water Of Sage x4 :Lv.170-190 Online 2 Hour
+310	311	5	5	160	3100	4	1 :Holy Water Of Sage x4 :Lv.170-190 Online 2 Hour
+311	312	6	5	160	3100	4	1 :Holy Water Of Sage x4 :Lv.170-190 Online 2 Hour
+312	313	1	1	180	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 3 Hour
+313	314	2	1	180	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 3 Hour
+314	315	3	1	180	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 3 Hour
+315	316	4	1	180	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 3 Hour
+316	317	5	1	180	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 3 Hour
+317	318	6	1	180	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 3 Hour
+318	319	1	1	180	1728	0	1 :Astral Board Card -K Sky :Lv.1-64 Online 3 Hour
+319	320	2	1	180	1728	0	1 :Astral Board Card -K Sky :Lv.1-64 Online 3 Hour
+320	321	3	1	180	1728	0	1 :Astral Board Card -K Sky :Lv.1-64 Online 3 Hour
+321	322	4	1	180	1728	0	1 :Astral Board Card -K Sky :Lv.1-64 Online 3 Hour
+322	323	5	1	180	1728	0	1 :Astral Board Card -K Sky :Lv.1-64 Online 3 Hour
+323	324	6	1	180	1728	0	1 :Astral Board Card -K Sky :Lv.1-64 Online 3 Hour
+324	325	1	2	190	578	1108	1 :Map Part x1 :Lv.65-99 Online 3 Hour
+325	326	2	2	190	578	1108	1 :Map Part x1 :Lv.65-99 Online 3 Hour
+326	327	3	2	190	578	1108	1 :Map Part x1 :Lv.65-99 Online 3 Hour
+327	328	4	2	190	578	1108	1 :Map Part x1 :Lv.65-99 Online 3 Hour
+328	329	5	2	190	578	1108	1 :Map Part x1 :Lv.65-99 Online 3 Hour
+329	330	6	2	190	578	1108	1 :Map Part x1 :Lv.65-99 Online 3 Hour
+330	331	1	2	190	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 3 Hour
+331	332	2	2	190	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 3 Hour
+332	333	3	2	190	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 3 Hour
+333	334	4	2	190	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 3 Hour
+334	335	5	2	190	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 3 Hour
+335	336	6	2	190	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 3 Hour
+336	337	1	2	190	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 3 Hour
+337	338	2	2	190	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 3 Hour
+338	339	3	2	190	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 3 Hour
+339	340	4	2	190	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 3 Hour
+340	341	5	2	190	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 3 Hour
+341	342	6	2	190	664	1281	1 :Sharpness Potion x1 :Lv.65-99 Online 3 Hour
+342	343	1	2	190	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 3 Hour
+343	344	2	2	190	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 3 Hour
+344	345	3	2	190	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 3 Hour
+345	346	4	2	190	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 3 Hour
+346	347	5	2	190	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 3 Hour
+347	348	6	2	190	660	1281	1 :Hardness Potion x1 :Lv.65-99 Online 3 Hour
+348	349	1	2	190	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 3 Hour
+349	350	2	2	190	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 3 Hour
+350	351	3	2	190	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 3 Hour
+351	352	4	2	190	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 3 Hour
+352	353	5	2	190	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 3 Hour
+353	354	6	2	190	661	1281	1 :Manacondense Potion x1 :Lv.65-99 Online 3 Hour
+354	355	1	3	180	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 3 Hour
+355	356	2	3	200	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 3 Hour
+356	357	3	3	200	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 3 Hour
+357	358	4	3	200	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 3 Hour
+358	359	5	3	200	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 3 Hour
+359	360	6	3	200	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 3 Hour
+360	361	1	3	200	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 3 Hour
+361	362	2	3	200	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 3 Hour
+362	363	3	3	200	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 3 Hour
+363	364	4	3	200	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 3 Hour
+364	365	5	3	200	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 3 Hour
+365	366	6	3	200	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 3 Hour
+366	367	1	3	200	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 3 Hour
+367	368	2	3	200	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 3 Hour
+368	369	3	3	200	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 3 Hour
+369	370	4	3	200	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 3 Hour
+370	371	5	3	200	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 3 Hour
+371	372	6	3	200	664	1281	1 :Hardness Potion x1 :Lv.100-119 Online 3 Hour
+372	373	1	3	200	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 3 Hour
+373	374	2	3	200	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 3 Hour
+374	375	3	3	200	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 3 Hour
+375	376	4	3	200	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 3 Hour
+376	377	5	3	200	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 3 Hour
+377	378	6	3	200	672	1281	1 :Sword Master Potion x1 :Lv.100-119 Online 3 Hour
+378	379	1	3	200	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 3 Hour
+379	380	2	3	200	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 3 Hour
+380	381	3	3	200	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 3 Hour
+381	382	4	3	200	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 3 Hour
+382	383	5	3	200	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 3 Hour
+383	384	6	3	200	673	1281	1 :Magic Master Potion x1 :Lv.100-119 Online 3 Hour
+384	385	1	4	210	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 3 Hour
+385	386	2	4	210	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 3 Hour
+386	387	3	4	210	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 3 Hour
+387	388	4	4	210	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 3 Hour
+388	389	5	4	210	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 3 Hour
+389	390	6	4	210	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 3 Hour
+390	391	1	4	210	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 3 Hour
+391	392	2	4	210	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 3 Hour
+392	393	3	4	210	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 3 Hour
+393	394	4	4	210	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 3 Hour
+394	395	5	4	210	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 3 Hour
+395	396	6	4	210	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 3 Hour
+396	397	1	4	210	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+397	398	2	4	210	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+398	399	3	4	210	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+399	400	4	4	210	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+400	401	5	4	210	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+401	402	6	4	210	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+402	403	1	5	220	2842	1500000	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 3 Hour
+403	404	2	5	220	2842	1500000	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 3 Hour
+404	405	3	5	220	2842	1500000	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 3 Hour
+405	406	4	5	220	2842	1500000	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 3 Hour
+406	407	5	5	220	2842	1500000	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 3 Hour
+407	408	6	5	220	2842	1500000	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 3 Hour
+408	409	1	5	220	2842	1500000	1 :Siena's Crest B1F x1 :Lv.170-190 Online 3 Hour
+409	410	2	5	220	2842	1500000	1 :Siena's Crest B1F x1 :Lv.170-190 Online 3 Hour
+410	411	3	5	220	2842	1500000	1 :Siena's Crest B1F x1 :Lv.170-190 Online 3 Hour
+411	412	4	5	220	2842	1500000	1 :Siena's Crest B1F x1 :Lv.170-190 Online 3 Hour
+412	413	5	5	220	2842	1500000	1 :Siena's Crest B1F x1 :Lv.170-190 Online 3 Hour
+413	414	6	5	220	2842	1500000	1 :Siena's Crest B1F x1 :Lv.170-190 Online 3 Hour
+414	415	1	5	220	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+415	416	2	5	220	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+416	417	3	5	220	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+417	418	4	5	220	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+418	419	5	5	220	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+419	420	6	5	220	939	2	1 :Odd Circle x2 :Lv.120-169 Online 3 Hour
+420	421	1	5	220	3306	0	1 :Minesta Training Book Chapter 28 x1 :Lv.170-190 Online 3 Hour
+421	422	2	5	220	3306	0	1 :Minesta Training Book Chapter 28 x1 :Lv.170-190 Online 3 Hour
+422	423	3	5	220	3306	0	1 :Minesta Training Book Chapter 28 x1 :Lv.170-190 Online 3 Hour
+423	424	4	5	220	3306	0	1 :Minesta Training Book Chapter 28 x1 :Lv.170-190 Online 3 Hour
+424	425	5	5	220	3306	0	1 :Minesta Training Book Chapter 28 x1 :Lv.170-190 Online 3 Hour
+425	426	6	5	220	3306	0	1 :Minesta Training Book Chapter 28 x1 :Lv.170-190 Online 3 Hour
+426	427	1	5	220	3307	0	1 :Minesta Training Book Chapter 29 x1 :Lv.170-190 Online 3 Hour
+427	428	2	5	220	3307	0	1 :Minesta Training Book Chapter 29 x1 :Lv.170-190 Online 3 Hour
+428	429	3	5	220	3307	0	1 :Minesta Training Book Chapter 29 x1 :Lv.170-190 Online 3 Hour
+429	430	4	5	220	3307	0	1 :Minesta Training Book Chapter 29 x1 :Lv.170-190 Online 3 Hour
+430	431	5	5	220	3307	0	1 :Minesta Training Book Chapter 29 x1 :Lv.170-190 Online 3 Hour
+431	432	6	5	220	3307	0	1 :Minesta Training Book Chapter 29 x1 :Lv.170-190 Online 3 Hour
+432	433	1	1	240	4	70	1 :Hp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+433	434	2	1	240	4	70	1 :Hp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+434	435	3	1	240	4	70	1 :Hp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+435	436	4	1	240	4	70	1 :Hp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+436	437	5	1	240	4	70	1 :Hp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+437	438	6	1	240	4	70	1 :Hp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+438	439	1	1	240	7	70	1 :Mp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+439	440	2	1	240	7	70	1 :Mp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+440	441	3	1	240	7	70	1 :Mp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+441	442	4	1	240	7	70	1 :Mp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+442	443	5	1	240	7	70	1 :Mp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+443	444	6	1	240	7	70	1 :Mp Potion(Lv.2)x70 :Lv.1-64 Online 4 Hour
+444	445	1	1	240	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 4 Hour
+445	446	2	1	240	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 4 Hour
+446	447	3	1	240	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 4 Hour
+447	448	4	1	240	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 4 Hour
+448	449	5	1	240	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 4 Hour
+449	450	6	1	240	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 4 Hour
+450	451	1	1	240	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 4 Hour
+451	452	2	1	240	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 4 Hour
+452	453	3	1	240	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 4 Hour
+453	454	4	1	240	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 4 Hour
+454	455	5	1	240	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 4 Hour
+455	456	6	1	240	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 4 Hour
+456	457	1	1	240	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 4 Hour
+457	458	2	1	240	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 4 Hour
+458	459	3	1	240	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 4 Hour
+459	460	4	1	240	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 4 Hour
+460	461	5	1	240	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 4 Hour
+461	462	6	1	240	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 4 Hour
+462	463	1	2	250	5	70	1 :Hp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+463	464	2	2	250	5	70	1 :Hp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+464	465	3	2	250	5	70	1 :Hp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+465	466	4	2	250	5	70	1 :Hp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+466	467	5	2	250	5	70	1 :Hp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+467	468	6	2	250	5	70	1 :Hp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+468	469	1	2	250	8	70	1 :Mp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+469	470	2	2	250	8	70	1 :Mp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+470	471	3	2	250	8	70	1 :Mp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+471	472	4	2	250	8	70	1 :Mp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+472	473	5	2	250	8	70	1 :Mp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+473	474	6	2	250	8	70	1 :Mp Potion(Lv.3)x70 :Lv.65-99 Online 4 Hour
+474	475	1	2	250	649	3	1 :Fury Potion(Lv.2) x3 :Lv.65-99 Online 4 Hour
+475	476	2	2	250	649	3	1 :Fury Potion(Lv.2) x3 :Lv.65-99 Online 4 Hour
+476	477	3	2	250	649	3	1 :Fury Potion(Lv.2) x3 :Lv.65-99 Online 4 Hour
+477	478	4	2	250	649	3	1 :Fury Potion(Lv.2) x3 :Lv.65-99 Online 4 Hour
+478	479	5	2	250	649	3	1 :Fury Potion(Lv.2) x3 :Lv.65-99 Online 4 Hour
+479	480	6	2	250	649	3	1 :Fury Potion(Lv.2) x3 :Lv.65-99 Online 4 Hour
+480	481	1	3	260	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+481	482	2	3	260	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+482	483	3	3	260	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+483	484	4	3	260	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+484	485	5	3	260	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+485	486	6	3	260	3103	50	1 :Hp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+486	487	1	3	260	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+487	488	2	3	260	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+488	489	3	3	260	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+489	490	4	3	260	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+490	491	5	3	260	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+491	492	6	3	260	3104	50	1 :Mp Potion(Lv.4)x50 :Lv.100-119 Online 4 Hour
+492	493	1	3	260	649	5	1 :Fury Potion(Lv.2) x5 :Lv.100-119 Online 4 Hour
+493	494	2	3	260	649	5	1 :Fury Potion(Lv.2) x5 :Lv.100-119 Online 4 Hour
+494	495	3	3	260	649	5	1 :Fury Potion(Lv.2) x5 :Lv.100-119 Online 4 Hour
+495	496	4	3	260	649	5	1 :Fury Potion(Lv.2) x5 :Lv.100-119 Online 4 Hour
+496	497	5	3	260	649	5	1 :Fury Potion(Lv.2) x5 :Lv.100-119 Online 4 Hour
+497	498	6	3	260	649	5	1 :Fury Potion(Lv.2) x5 :Lv.100-119 Online 4 Hour
+498	499	1	4	270	3099	4	1 :Holy Water Of Fighter x4 :Lv.120-169 Online 4 Hour
+499	500	2	4	270	3099	4	1 :Holy Water Of Fighter x4 :Lv.120-169 Online 4 Hour
+500	501	3	4	270	3099	4	1 :Holy Water Of Fighter x4 :Lv.120-169 Online 4 Hour
+501	502	4	4	270	3099	4	1 :Holy Water Of Fighter x4 :Lv.120-169 Online 4 Hour
+502	503	5	4	270	3099	4	1 :Holy Water Of Fighter x4 :Lv.120-169 Online 4 Hour
+503	504	6	4	270	3099	4	1 :Holy Water Of Fighter x4 :Lv.120-169 Online 4 Hour
+504	505	1	4	270	3100	4	1 :Holy Water Of Sage x4 :Lv.120-169 Online 4 Hour
+505	506	2	4	270	3100	4	1 :Holy Water Of Sage x4 :Lv.120-169 Online 4 Hour
+506	507	3	4	270	3100	4	1 :Holy Water Of Sage x4 :Lv.120-169 Online 4 Hour
+507	508	4	4	270	3100	4	1 :Holy Water Of Sage x4 :Lv.120-169 Online 4 Hour
+508	509	5	4	270	3100	4	1 :Holy Water Of Sage x4 :Lv.120-169 Online 4 Hour
+509	510	6	4	270	3100	4	1 :Holy Water Of Sage x4 :Lv.120-169 Online 4 Hour
+510	511	1	5	280	3099	6	1 :Holy Water Of Fighter x6 :Lv.170-190 Online 4 Hour
+511	512	2	5	280	3099	6	1 :Holy Water Of Fighter x6 :Lv.170-190 Online 4 Hour
+512	513	3	5	280	3099	6	1 :Holy Water Of Fighter x6 :Lv.170-190 Online 4 Hour
+513	514	4	5	280	3099	6	1 :Holy Water Of Fighter x6 :Lv.170-190 Online 4 Hour
+514	515	5	5	280	3099	6	1 :Holy Water Of Fighter x6 :Lv.170-190 Online 4 Hour
+515	516	6	5	280	3099	6	1 :Holy Water Of Fighter x6 :Lv.170-190 Online 4 Hour
+516	517	1	5	280	3100	6	1 :Holy Water Of Sage x6 :Lv.170-190 Online 4 Hour
+517	518	2	5	280	3100	6	1 :Holy Water Of Sage x6 :Lv.170-190 Online 4 Hour
+518	519	3	5	280	3100	6	1 :Holy Water Of Sage x6 :Lv.170-190 Online 4 Hour
+519	520	4	5	280	3100	6	1 :Holy Water Of Sage x6 :Lv.170-190 Online 4 Hour
+520	521	5	5	280	3100	6	1 :Holy Water Of Sage x6 :Lv.170-190 Online 4 Hour
+521	522	6	5	280	3100	6	1 :Holy Water Of Sage x6 :Lv.170-190 Online 4 Hour
+522	523	1	1	300	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 5 Hour
+523	524	2	1	300	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 5 Hour
+524	525	3	1	300	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 5 Hour
+525	526	4	1	300	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 5 Hour
+526	527	5	1	300	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 5 Hour
+527	528	6	1	300	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 5 Hour
+528	529	1	1	300	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 5 Hour
+529	530	2	1	300	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 5 Hour
+530	531	3	1	300	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 5 Hour
+531	532	4	1	300	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 5 Hour
+532	533	5	1	300	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 5 Hour
+533	534	6	1	300	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 5 Hour
+534	535	1	2	310	578	1108	1 :Map Part x1 :Lv.65-99 Online 5 Hour
+535	536	2	2	310	578	1108	1 :Map Part x1 :Lv.65-99 Online 5 Hour
+536	537	3	2	310	578	1108	1 :Map Part x1 :Lv.65-99 Online 5 Hour
+537	538	4	2	310	578	1108	1 :Map Part x1 :Lv.65-99 Online 5 Hour
+538	539	5	2	310	578	1108	1 :Map Part x1 :Lv.65-99 Online 5 Hour
+539	540	6	2	310	578	1108	1 :Map Part x1 :Lv.65-99 Online 5 Hour
+540	541	1	2	310	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 5 Hour
+541	542	2	2	310	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 5 Hour
+542	543	3	2	310	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 5 Hour
+543	544	4	2	310	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 5 Hour
+544	545	5	2	310	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 5 Hour
+545	546	6	2	310	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 5 Hour
+546	547	1	2	310	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 5 Hour
+547	548	2	2	310	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 5 Hour
+548	549	3	2	310	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 5 Hour
+549	550	4	2	310	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 5 Hour
+550	551	5	2	310	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 5 Hour
+551	552	6	2	310	664	1283	1 :Sharpness Potion x3 :Lv.1-64 Online 5 Hour
+552	553	1	2	310	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 5 Hour
+553	554	2	2	310	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 5 Hour
+554	555	3	2	310	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 5 Hour
+555	556	4	2	310	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 5 Hour
+556	557	5	2	310	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 5 Hour
+557	558	6	2	310	660	1283	1 :Hardness Potion x3 :Lv.1-64 Online 5 Hour
+558	559	1	2	310	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 5 Hour
+559	560	2	2	310	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 5 Hour
+560	561	3	2	310	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 5 Hour
+561	562	4	2	310	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 5 Hour
+562	563	5	2	310	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 5 Hour
+563	564	6	2	310	661	1283	1 :Manacondense Potion x3 :Lv.1-64 Online 5 Hour
+564	565	1	3	320	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 5 Hour
+565	566	2	3	320	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 5 Hour
+566	567	3	3	320	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 5 Hour
+567	568	4	3	320	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 5 Hour
+568	569	5	3	320	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 5 Hour
+569	570	6	3	320	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 5 Hour
+570	571	1	3	320	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 5 Hour
+571	572	2	3	320	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 5 Hour
+572	573	3	3	320	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 5 Hour
+573	574	4	3	320	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 5 Hour
+574	575	5	3	320	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 5 Hour
+575	576	6	3	320	601	1241	1 :Epaulet of the Undead(B1F) x1 :Lv.100-119 Online 5 Hour
+576	577	1	3	320	664	1283	1 :Hardness Potion x3 :Lv.100-119 Online 5 Hour
+577	578	2	3	320	664	1283	1 :Hardness Potion x3 :Lv.100-119 Online 5 Hour
+578	579	3	3	320	664	1283	1 :Hardness Potion x3 :Lv.100-119 Online 5 Hour
+579	580	4	3	320	664	1283	1 :Hardness Potion x3 :Lv.100-119 Online 5 Hour
+580	581	5	3	320	664	1283	1 :Hardness Potion x3 :Lv.100-119 Online 5 Hour
+581	582	6	3	320	664	1283	1 :Hardness Potion x3 :Lv.100-119 Online 5 Hour
+582	583	1	3	320	672	1283	1 :Sword Master Potion x3 :Lv.100-119 Online 5 Hour
+583	584	2	3	320	672	1283	1 :Sword Master Potion x3 :Lv.100-119 Online 5 Hour
+584	585	3	3	320	672	1283	1 :Sword Master Potion x3 :Lv.100-119 Online 5 Hour
+585	586	4	3	320	672	1283	1 :Sword Master Potion x3 :Lv.100-119 Online 5 Hour
+586	587	5	3	320	672	1283	1 :Sword Master Potion x3 :Lv.100-119 Online 5 Hour
+587	588	6	3	320	672	1283	1 :Sword Master Potion x3 :Lv.100-119 Online 5 Hour
+588	589	1	3	320	673	1283	1 :Magic Master Potion x3 :Lv.100-119 Online 5 Hour
+589	590	2	3	320	673	1283	1 :Magic Master Potion x3 :Lv.100-119 Online 5 Hour
+590	591	3	3	320	673	1283	1 :Magic Master Potion x3 :Lv.100-119 Online 5 Hour
+591	592	4	3	320	673	1283	1 :Magic Master Potion x3 :Lv.100-119 Online 5 Hour
+592	593	5	3	320	673	1283	1 :Magic Master Potion x3 :Lv.100-119 Online 5 Hour
+593	594	6	3	320	673	1283	1 :Magic Master Potion x3 :Lv.100-119 Online 5 Hour
+594	595	1	4	330	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 5 Hour
+595	596	2	4	330	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 5 Hour
+596	597	3	4	330	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 5 Hour
+597	598	4	4	330	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 5 Hour
+598	599	5	4	330	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 5 Hour
+599	600	6	4	330	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 5 Hour
+600	601	1	4	330	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 5 Hour
+601	602	2	4	330	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 5 Hour
+602	603	3	4	330	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 5 Hour
+603	604	4	4	330	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 5 Hour
+604	605	5	4	330	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 5 Hour
+605	606	6	4	330	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 5 Hour
+606	607	1	4	330	939	2	1 :Odd Circle x2 :Lv.120-169 Online 5 Hour
+607	608	2	4	330	939	2	1 :Odd Circle x2 :Lv.120-169 Online 5 Hour
+608	609	3	4	330	939	2	1 :Odd Circle x2 :Lv.120-169 Online 5 Hour
+609	610	4	4	330	939	2	1 :Odd Circle x2 :Lv.120-169 Online 5 Hour
+610	611	5	4	330	939	2	1 :Odd Circle x2 :Lv.120-169 Online 5 Hour
+611	612	6	4	330	939	2	1 :Odd Circle x2 :Lv.120-169 Online 5 Hour
+612	613	1	5	340	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 5 Hour
+613	614	2	5	340	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 5 Hour
+614	615	3	5	340	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 5 Hour
+615	616	4	5	340	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 5 Hour
+616	617	5	5	340	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 5 Hour
+617	618	6	5	340	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 5 Hour
+618	619	1	5	340	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 5 Hour
+619	620	2	5	340	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 5 Hour
+620	621	3	5	340	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 5 Hour
+621	622	4	5	340	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 5 Hour
+622	623	5	5	340	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 5 Hour
+623	624	6	5	340	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 5 Hour
+624	625	1	5	340	939	3	1 :Odd Circle x3 :Lv.170-190 Online 5 Hour
+625	626	2	5	340	939	3	1 :Odd Circle x3 :Lv.170-190 Online 5 Hour
+626	627	3	5	340	939	3	1 :Odd Circle x3 :Lv.170-190 Online 5 Hour
+627	628	4	5	340	939	3	1 :Odd Circle x3 :Lv.170-190 Online 5 Hour
+628	629	5	5	340	939	3	1 :Odd Circle x3 :Lv.170-190 Online 5 Hour
+629	630	6	5	340	939	3	1 :Odd Circle x3 :Lv.170-190 Online 5 Hour
+630	631	1	1	480	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 8 Hour
+631	632	2	1	480	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 8 Hour
+632	633	3	1	480	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 8 Hour
+633	634	4	1	480	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 8 Hour
+634	635	5	1	480	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 8 Hour
+635	636	6	1	480	1	0	1 :Upgrade Core(High)x1 :Lv.1-64 Online 8 Hour
+636	637	1	1	480	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 8 Hour
+637	638	2	1	480	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 8 Hour
+638	639	3	1	480	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 8 Hour
+639	640	4	1	480	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 8 Hour
+640	641	5	1	480	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 8 Hour
+641	642	6	1	480	1725	0	1 :Astral Board Card -K Pink :Lv.1-64 Online 8 Hour
+642	643	1	2	490	578	1108	1 :Map Part x1 :Lv.65-99 Online 8 Hour
+643	644	2	2	490	578	1108	1 :Map Part x1 :Lv.65-99 Online 8 Hour
+644	645	3	2	490	578	1108	1 :Map Part x1 :Lv.65-99 Online 8 Hour
+645	646	4	2	490	578	1108	1 :Map Part x1 :Lv.65-99 Online 8 Hour
+646	647	5	2	490	578	1108	1 :Map Part x1 :Lv.65-99 Online 8 Hour
+647	648	6	2	490	578	1108	1 :Map Part x1 :Lv.65-99 Online 8 Hour
+648	649	1	2	490	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 8 Hour
+649	650	2	2	490	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 8 Hour
+650	651	3	2	490	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 8 Hour
+651	652	4	2	490	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 8 Hour
+652	653	5	2	490	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 8 Hour
+653	654	6	2	490	496	1231	1 :Muster Card : Ruina Station x1 :Lv.65-99 Online 8 Hour
+654	655	1	2	490	664	1285	1 :Sharpness Potion x5 :Lv.1-64 Online 8 Hour
+655	656	2	2	490	664	1285	1 :Sharpness Potion x5 :Lv.1-64 Online 8 Hour
+656	657	3	2	490	664	1285	1 :Sharpness Potion x5 :Lv.1-64 Online 8 Hour
+657	658	4	2	490	664	1285	1 :Sharpness Potion x5 :Lv.1-64 Online 8 Hour
+658	659	5	2	490	664	1285	1 :Sharpness Potion x5 :Lv.1-64 Online 8 Hour
+659	660	6	2	490	664	1285	1 :Sharpness Potion x5 :Lv.1-64 Online 8 Hour
+660	661	1	2	490	660	1285	1 :Hardness Potion x5 :Lv.1-64 Online 8 Hour
+661	662	2	2	490	660	1285	1 :Hardness Potion x5 :Lv.1-64 Online 8 Hour
+662	663	3	2	490	660	1285	1 :Hardness Potion x5 :Lv.1-64 Online 8 Hour
+663	664	4	2	490	660	1285	1 :Hardness Potion x5 :Lv.1-64 Online 8 Hour
+664	665	5	2	490	660	1285	1 :Hardness Potion x5 :Lv.1-64 Online 8 Hour
+665	666	6	2	490	660	1285	1 :Hardness Potion x5 :Lv.1-64 Online 8 Hour
+666	667	1	2	490	661	1285	1 :Manacondense Potion x5 :Lv.1-64 Online 8 Hour
+667	668	2	2	490	661	1285	1 :Manacondense Potion x5 :Lv.1-64 Online 8 Hour
+668	669	3	2	490	661	1285	1 :Manacondense Potion x5 :Lv.1-64 Online 8 Hour
+669	670	4	2	490	661	1285	1 :Manacondense Potion x5 :Lv.1-64 Online 8 Hour
+670	671	5	2	490	661	1285	1 :Manacondense Potion x5 :Lv.1-64 Online 8 Hour
+671	672	6	2	490	661	1285	1 :Manacondense Potion x5 :Lv.1-64 Online 8 Hour
+672	673	1	3	500	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 8 Hour
+673	674	2	3	500	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 8 Hour
+674	675	3	3	500	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 8 Hour
+675	676	4	3	500	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 8 Hour
+676	677	5	3	500	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 8 Hour
+677	678	6	3	500	663	1292	1 :Seal of the Darkness x1 :Lv.100-119 Online 8 Hour
+678	679	1	3	500	945	1288	1 :Epaulet of the Undead(B2F) x1 :Lv.100-119 Online 8 Hour
+679	680	2	3	500	945	1288	1 :Epaulet of the Undead(B2F) x1 :Lv.100-119 Online 8 Hour
+680	681	3	3	500	945	1288	1 :Epaulet of the Undead(B2F) x1 :Lv.100-119 Online 8 Hour
+681	682	4	3	500	945	1288	1 :Epaulet of the Undead(B2F) x1 :Lv.100-119 Online 8 Hour
+682	683	5	3	500	945	1288	1 :Epaulet of the Undead(B2F) x1 :Lv.100-119 Online 8 Hour
+683	684	6	3	500	945	1288	1 :Epaulet of the Undead(B2F) x1 :Lv.100-119 Online 8 Hour
+684	685	1	3	500	664	1285	1 :Hardness Potion x5 :Lv.100-119 Online 8 Hour
+685	686	2	3	500	664	1285	1 :Hardness Potion x5 :Lv.100-119 Online 8 Hour
+686	687	3	3	500	664	1285	1 :Hardness Potion x5 :Lv.100-119 Online 8 Hour
+687	688	4	3	500	664	1285	1 :Hardness Potion x5 :Lv.100-119 Online 8 Hour
+688	689	5	3	500	664	1285	1 :Hardness Potion x5 :Lv.100-119 Online 8 Hour
+689	690	6	3	500	664	1285	1 :Hardness Potion x5 :Lv.100-119 Online 8 Hour
+690	691	1	3	500	672	1285	1 :Sword Master Potion x5 :Lv.100-119 Online 8 Hour
+691	692	2	3	500	672	1285	1 :Sword Master Potion x5 :Lv.100-119 Online 8 Hour
+692	693	3	3	500	672	1285	1 :Sword Master Potion x5 :Lv.100-119 Online 8 Hour
+693	694	4	3	500	672	1285	1 :Sword Master Potion x5 :Lv.100-119 Online 8 Hour
+694	695	5	3	500	672	1285	1 :Sword Master Potion x5 :Lv.100-119 Online 8 Hour
+695	696	6	3	500	672	1285	1 :Sword Master Potion x5 :Lv.100-119 Online 8 Hour
+696	697	1	3	500	673	1285	1 :Magic Master Potion x5 :Lv.100-119 Online 8 Hour
+697	698	2	3	500	673	1285	1 :Magic Master Potion x5 :Lv.100-119 Online 8 Hour
+698	699	3	3	500	673	1285	1 :Magic Master Potion x5 :Lv.100-119 Online 8 Hour
+699	700	4	3	500	673	1285	1 :Magic Master Potion x5 :Lv.100-119 Online 8 Hour
+700	701	5	3	500	673	1285	1 :Magic Master Potion x5 :Lv.100-119 Online 8 Hour
+701	702	6	3	500	673	1285	1 :Magic Master Potion x5 :Lv.100-119 Online 8 Hour
+702	703	1	4	510	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 8 Hour
+703	704	2	4	510	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 8 Hour
+704	705	3	4	510	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 8 Hour
+705	706	4	4	510	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 8 Hour
+706	707	5	4	510	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 8 Hour
+707	708	6	4	510	2202	1368	1 :Copy of the Illusive Apocalypse x1 :Lv.120-169 Online 8 Hour
+708	709	1	4	510	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 8 Hour
+709	710	2	4	510	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 8 Hour
+710	711	3	4	510	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 8 Hour
+711	712	4	4	510	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 8 Hour
+712	713	5	4	510	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 8 Hour
+713	714	6	4	510	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.120-169 Online 8 Hour
+714	715	1	4	510	1721	0	1 :Astral Board Card -K Silver x1 :Lv.120-169 Online 8 Hour
+715	716	2	4	510	1721	0	1 :Astral Board Card -K Silver x1 :Lv.120-169 Online 8 Hour
+716	717	3	4	510	1721	0	1 :Astral Board Card -K Silver x1 :Lv.120-169 Online 8 Hour
+717	718	4	4	510	1721	0	1 :Astral Board Card -K Silver x1 :Lv.120-169 Online 8 Hour
+718	719	5	4	510	1721	0	1 :Astral Board Card -K Silver x1 :Lv.120-169 Online 8 Hour
+719	720	6	4	510	1721	0	1 :Astral Board Card -K Silver x1 :Lv.120-169 Online 8 Hour
+720	721	1	5	520	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 8 Hour
+721	722	2	5	520	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 8 Hour
+722	723	3	5	520	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 8 Hour
+723	724	4	5	520	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 8 Hour
+724	725	5	5	520	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 8 Hour
+725	726	6	5	520	2255	1373	1 :Apocalypse of Other Dimension x1 :Lv.170-190 Online 8 Hour
+726	727	1	5	520	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 8 Hour
+727	728	2	5	520	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 8 Hour
+728	729	3	5	520	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 8 Hour
+729	730	4	5	520	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 8 Hour
+730	731	5	5	520	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 8 Hour
+731	732	6	5	520	1660	1347	1 :Siena's Crest B1F x1 :Lv.170-190 Online 8 Hour
+732	733	1	5	520	939	5	1 :Odd Circle x5 :Lv.170-190 Online 8 Hour
+733	734	2	5	520	939	5	1 :Odd Circle x5 :Lv.170-190 Online 8 Hour
+734	735	3	5	520	939	5	1 :Odd Circle x5 :Lv.170-190 Online 8 Hour
+735	736	4	5	520	939	5	1 :Odd Circle x5 :Lv.170-190 Online 8 Hour
+736	737	5	5	520	939	5	1 :Odd Circle x5 :Lv.170-190 Online 8 Hour
+737	738	6	5	520	939	5	1 :Odd Circle x5 :Lv.170-190 Online 8 Hour
+738	739	1	2	800	1308	1 :ID 1308 :Chaos Box - Board
+739	740	2	2	800	1308	1 :ID 1308 :Chaos Box - Board
+740	741	3	2	800	1308	1 :ID 1308 :Chaos Box - Board
+741	742	4	2	800	1308	1 :ID 1308 :Chaos Box - Board
+742	743	5	2	800	1308	1 :ID 1308 :Chaos Box - Board
+743	744	6	2	800	1308	1 :ID 1308 :Chaos Box - Board
+744	745	1	3	810	1308	1 :ID 1308 :Chaos Box - Board
+745	746	2	3	810	1308	1 :ID 1308 :Chaos Box - Board
+746	747	3	3	810	1308	1 :ID 1308 :Chaos Box - Board
+747	748	4	3	810	1308	1 :ID 1308 :Chaos Box - Board
+748	749	5	3	810	1308	1 :ID 1308 :Chaos Box - Board
+749	750	6	3	810	1308	1 :ID 1308 :Chaos Box - Board
+750	751	1	4	820	1308	1 :ID 1308 :Chaos Box - Board
+751	752	2	4	820	1308	1 :ID 1308 :Chaos Box - Board
+752	753	3	4	820	1308	1 :ID 1308 :Chaos Box - Board
+753	754	4	4	820	1308	1 :ID 1308 :Chaos Box - Board
+754	755	5	4	820	1308	1 :ID 1308 :Chaos Box - Board
+755	756	6	4	820	1308	1 :ID 1308 :Chaos Box - Board
+756	757	1	5	830	1308	1 :ID 1308 :Chaos Box - Board
+757	758	2	5	830	1308	1 :ID 1308 :Chaos Box - Board
+758	759	3	5	830	1308	1 :ID 1308 :Chaos Box - Board
+759	760	4	5	830	1308	1 :ID 1308 :Chaos Box - Board
+760	761	5	5	830	1308	1 :ID 1308 :Chaos Box - Board
+761	762	6	5	830	1308	1 :ID 1308 :Chaos Box - Board
+762	763	1	2	250	1311	0 :ID 1311 :Chaos Box - Cash
+763	764	2	2	250	1311	0 :ID 1311 :Chaos Box - Cash
+764	765	3	2	250	1311	0 :ID 1311 :Chaos Box - Cash
+765	766	4	2	250	1311	0 :ID 1311 :Chaos Box - Cash
+766	767	5	2	250	1311	0 :ID 1311 :Chaos Box - Cash
+767	768	6	2	250	1311	0 :ID 1311 :Chaos Box - Cash
+768	769	1	3	260	1311	0 :ID 1311 :Chaos Box - Cash
+769	770	2	3	260	1311	0 :ID 1311 :Chaos Box - Cash
+770	771	3	3	260	1311	0 :ID 1311 :Chaos Box - Cash
+771	772	4	3	260	1311	0 :ID 1311 :Chaos Box - Cash
+772	773	5	3	260	1311	0 :ID 1311 :Chaos Box - Cash
+773	774	6	3	260	1311	0 :ID 1311 :Chaos Box - Cash
+774	775	1	4	270	1311	0 :ID 1311 :Chaos Box - Cash
+775	776	2	4	270	1311	0 :ID 1311 :Chaos Box - Cash
+776	777	3	4	270	1311	0 :ID 1311 :Chaos Box - Cash
+777	778	4	4	270	1311	0 :ID 1311 :Chaos Box - Cash
+778	779	5	4	270	1311	0 :ID 1311 :Chaos Box - Cash
+779	780	6	4	270	1311	0 :ID 1311 :Chaos Box - Cash
+780	781	1	5	280	1311	0 :ID 1311 :Chaos Box - Cash
+781	782	2	5	280	1311	0 :ID 1311 :Chaos Box - Cash
+782	783	3	5	280	1311	0 :ID 1311 :Chaos Box - Cash
+783	784	4	5	280	1311	0 :ID 1311 :Chaos Box - Cash
+784	785	5	5	280	1311	0 :ID 1311 :Chaos Box - Cash
+785	786	6	5	280	1311	0 :ID 1311 :Chaos Box - Cash
+786	787	1	1	30	2842	1000000 :ID 1311 :Potion_Of_luck
+787	788	2	1	30	2842	1000000 :ID 1311 :Potion_Of_luck
+788	789	3	1	30	2842	1000000 :ID 1311 :Potion_Of_luck
+789	790	4	1	30	2842	1000000 :ID 1311 :Potion_Of_luck
+790	791	5	1	30	2842	1000000 :ID 1311 :Potion_Of_luck
+791	792	6	1	30	2842	1000000 :ID 1311 :Potion_Of_luck
+792	793	1	2	60	2842	1000000 :ID 1311 :Potion_Of_luck
+793	794	2	2	60	2842	1000000 :ID 1311 :Potion_Of_luck
+794	795	3	2	60	2842	1000000 :ID 1311 :Potion_Of_luck
+795	796	4	2	60	2842	1000000 :ID 1311 :Potion_Of_luck
+796	797	5	2	60	2842	1000000 :ID 1311 :Potion_Of_luck
+797	798	6	2	60	2842	1000000 :ID 1311 :Potion_Of_luck
+798	799	1	3	70	2842	1000000 :ID 1311 :Potion_Of_luck
+799	800	2	3	70	2842	1000000 :ID 1311 :Potion_Of_luck
+800	801	3	3	70	2842	1000000 :ID 1311 :Potion_Of_luck
+801	802	4	3	70	2842	1000000 :ID 1311 :Potion_Of_luck
+802	803	5	3	70	2842	1000000 :ID 1311 :Potion_Of_luck
+803	804	6	3	70	2842	1000000 :ID 1311 :Potion_Of_luck
+804	805	1	4	80	2842	1000000 :ID 1311 :Potion_Of_luck
+805	806	2	4	80	2842	1000000 :ID 1311 :Potion_Of_luck
+806	807	3	4	80	2842	1000000 :ID 1311 :Potion_Of_luck
+807	808	4	4	80	2842	1000000 :ID 1311 :Potion_Of_luck
+808	809	5	4	80	2842	1000000 :ID 1311 :Potion_Of_luck
+809	810	6	4	80	2842	1000000 :ID 1311 :Potion_Of_luck
+810	811	1	5	90	2842	1000000 :ID 1311 :Potion_Of_luck
+811	812	2	5	90	2842	1000000 :ID 1311 :Potion_Of_luck
+812	813	3	5	90	2842	1000000 :ID 1311 :Potion_Of_luck
+813	814	4	5	90	2842	1000000 :ID 1311 :Potion_Of_luck
+814	815	5	5	90	2842	1000000 :ID 1311 :Potion_Of_luck
+815	816	6	5	90	2842	1000000 :ID 1311 :Potion_Of_luck

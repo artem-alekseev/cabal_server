@@ -9,3 +9,7 @@
 [MobsDrop]	TerrainIdx	SpeciesIdx	ItemKind	ItemOpt	DropRate	MinLv	MaxDropCnt	OptPoolIdx	DurationIdx
 
 [MobsDropMission]	TerrainIdx	SpeciesIdx	ItemKind	ItemOpt	DropRate	MaxDropCnt
+0	0	2443	564	3448	60	0
+1	0	2444	542	3448	60	0
+2	0	2447	436	3535	60	0
+3	0	2448	2689	3571	90	0

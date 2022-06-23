@@ -162,6 +162,7 @@
 158	837	114	90	11	11	75000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	0
 159	836	118	108	11	11	15000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	0
 160	837	108	124	11	11	75000	1	<null>	<null>	<null>	0	0	0	0	0	0	0	0
-
+161	759	184	23	11	11	3600000	1	<null>	<null>	<null>	0	0	1	1	44	1	0	0
+0	1258	136	131	11	11	604800000	1	<null>	<null>	<null>	0	1	1	1	1	0	285	1000
 
 [MissionMMAP]	QDungeonIdx	MMapidx	Cells
