@@ -26,7 +26,7 @@ ENV WEXP_RATE=$WEXP_RATE
 ENV ITEMS_PER_DROP=$ITEMS_PER_DROP
 
 RUN curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
-RUN yum update; yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 msodbcsql17 mssql-tools nano bind-utils 
+RUN yum update; yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 msodbcsql17.10 mssql-tools nano bind-utils
 
 RUN ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.4 && ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.6
 
@@ -35,9 +35,9 @@ COPY usr /usr
 
 RUN ln -s /etc/cabal/Template/sh/cabal_create_server.sh /usr/bin/cabal_create_server \
  && ln -s /etc/cabal/Template/sh/cabal_create_chanel.sh /usr/bin/cabal_create_chanel \
- && ln -s /etc/cabal/Template/sh/global_mgr_svr.sh /usr/bin/global_mgr_svr \ 
- && ln -s /etc/cabal/Template/sh/config_db_passwd.sh /usr/bin/config_db_passwd \ 
- && ln -s /etc/cabal/Template/sh/world_svr_start.sh /usr/bin/world_svr_start \ 
+ && ln -s /etc/cabal/Template/sh/global_mgr_svr.sh /usr/bin/global_mgr_svr \
+ && ln -s /etc/cabal/Template/sh/config_db_passwd.sh /usr/bin/config_db_passwd \
+ && ln -s /etc/cabal/Template/sh/world_svr_start.sh /usr/bin/world_svr_start \
  && chmod +x /etc/cabal/Template/sh/cabal_create_server.sh \
  && chmod +x /etc/cabal/Template/sh/cabal_create_chanel.sh \
  && chmod +x /etc/cabal/Template/sh/global_mgr_svr.sh \
