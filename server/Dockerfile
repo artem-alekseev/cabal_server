@@ -26,7 +26,7 @@ ENV WEXP_RATE=$WEXP_RATE
 ENV ITEMS_PER_DROP=$ITEMS_PER_DROP
 
 RUN curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
-RUN yum update; yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 msodbcsql17.10 mssql-tools nano bind-utils
+RUN yum update; yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 msodbcsql17.10 mssql-tools nano bind-utils dos2unix
 
 RUN ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.4 && ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.6
 
@@ -45,6 +45,9 @@ RUN ln -s /etc/cabal/Template/sh/cabal_create_server.sh /usr/bin/cabal_create_se
  && chmod +x /etc/cabal/Template/sh/world_svr_start.sh \
  && mkdir -p /var/log/cabal \
  && chmod -R 777 /etc/cabal
+
+RUN dos2unix /etc/cabal/Template/sh/*.sh
+RUN dos2unix /etc/cabal/Template/conf/*.ini
 
 RUN cabal_create_server 1
 RUN cabal_create_chanel 1 1
