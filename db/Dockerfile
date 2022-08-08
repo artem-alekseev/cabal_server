@@ -2,6 +2,8 @@ FROM mcr.microsoft.com/mssql/server:2019-latest
 
 USER root
 
+ENV ACCEPT_EULA=Y
+
 COPY ./backup /var/opt/mssql/backup
 COPY ./restoredb.sh restoredb.sh
 RUN wget https://packages.microsoft.com/config/ubuntu/20.04/prod.list | tee /etc/apt/sources.list.d/msprod.list
