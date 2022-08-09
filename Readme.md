@@ -11,6 +11,7 @@ Copy .env.example to .env and configurate .env
 ```
 DB_PASSWORD=password_from_db //Use a strong password for mssql with special symbols, numbers, and uppercase symbols
 CONNECT_IP=192.168.1.1 // IP server
+TZ=UTC // Containers Timezone
 EXP_RATE=100 // Enter EXP rate multiplier, e.g. 5 for 5x 
 SEXP_RATE=100 // Enter Skill EXP rate multiplier
 CEXP_RATE=100 // Enter Craft EXP rate multiplier
@@ -26,7 +27,8 @@ Otherwise, your container will not start.
 
 ## Build containers
 ```cmd
-docker-compose build
+docker build server -t cabal-server -f server/Dockerfile
+docker build db -t cabal-db-mssql -f db/Dockerfile
 ```
 ## Database
 
@@ -92,4 +94,11 @@ docker-compose logs container_name
 example
 ```cmd
 docker-compose logs global_mgr_svr
+```
+
+### Start script
+
+After the first manual startup and `DB` restore you could use the `start.sh` script to startup the whole environment.
+```cmd
+./start.sh
 ```
