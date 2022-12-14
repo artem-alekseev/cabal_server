@@ -26,7 +26,7 @@ ENV WEXP_RATE=$WEXP_RATE
 ENV ITEMS_PER_DROP=$ITEMS_PER_DROP
 
 RUN curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
-RUN yum update; yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 msodbcsql17.10 mssql-tools nano bind-utils dos2unix
+RUN yum update; yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 msodbcsql17 mssql-tools nano bind-utils dos2unix
 
 RUN ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.4 && ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.6
 
