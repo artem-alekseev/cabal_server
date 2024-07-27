@@ -26,7 +26,9 @@ ENV WEXP_RATE=$WEXP_RATE
 ENV ITEMS_PER_DROP=$ITEMS_PER_DROP
 
 RUN curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
-RUN yum update; yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 msodbcsql17-17.10.4.1-1.x86_64 mssql-tools nano bind-utils dos2unix
+RUN curl -fsSL https://autoinstall.plesk.com/PSA_18.0.62/examiners/repository_check.sh | bash -s -- update >/dev/null
+RUN yum update -y
+RUN yum -y install glibc.i686 libgcc.i686 libstdc++.i686 openssl-devel.i686 msodbcsql17-17.10.4.1-1.x86_64 mssql-tools nano bind-utils dos2unix
 
 RUN ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.4 && ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.6
 
